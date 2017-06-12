@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09FCA8E11E971F1D000D48F2 /* JugueteriaBD.db in Resources */ = {isa = PBXBuildFile; fileRef = 09FCA8E01E971F1D000D48F2 /* JugueteriaBD.db */; };
+		182E6DD81E968A03007D4317 /* AlimentadorInventarioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E6DD61E968A03007D4317 /* AlimentadorInventarioVC.m */; };
+		185DB19D1EEC90C2004A575C /* iToys-Label.png in Resources */ = {isa = PBXBuildFile; fileRef = 185DB19C1EEC90C2004A575C /* iToys-Label.png */; };
+		185DB19F1EEDC324004A575C /* carrito.png in Resources */ = {isa = PBXBuildFile; fileRef = 185DB19E1EEDC324004A575C /* carrito.png */; };
+		185DB1A21EEDD055004A575C /* VentaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185DB1A11EEDD055004A575C /* VentaVC.m */; };
+		18607CE41EE9FFB10039C1A6 /* ReportesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18607CE31EE9FFB10039C1A6 /* ReportesVC.m */; };
+		188901241EEBCE9100D194E5 /* ManejadorSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 188901231EEBCE9100D194E5 /* ManejadorSQLite.m */; };
+		189E96241EE780CF003E85C0 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E96231EE780CF003E85C0 /* LoginVC.m */; };
+		189E962E1EE785EA003E85C0 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E962D1EE785EA003E85C0 /* TabViewController.m */; };
+		18C8CF4C1EEAF85300A9C1CD /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8CF4B1EEAF85300A9C1CD /* Window.m */; };
+		18E942AD1EE9BF6F00C1A910 /* InventarioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E942AC1EE9BF6F00C1A910 /* InventarioVC.m */; };
+		18EF9B951E947521004D66C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9B941E947521004D66C9 /* AppDelegate.m */; };
+		18EF9B981E947521004D66C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9B971E947521004D66C9 /* main.m */; };
+		18EF9B9D1E947521004D66C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EF9B9C1E947521004D66C9 /* Assets.xcassets */; };
+		18EF9BA01E947521004D66C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EF9B9E1E947521004D66C9 /* Main.storyboard */; };
+		18EF9BAA1E947A84004D66C9 /* Producto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9BA91E947A84004D66C9 /* Producto.m */; };
+		18EF9BAD1E947D97004D66C9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF9BAC1E947D96004D66C9 /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09FCA8E01E971F1D000D48F2 /* JugueteriaBD.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = JugueteriaBD.db; sourceTree = "<group>"; };
+		182E6DD51E968A03007D4317 /* AlimentadorInventarioVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlimentadorInventarioVC.h; sourceTree = "<group>"; };
+		182E6DD61E968A03007D4317 /* AlimentadorInventarioVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlimentadorInventarioVC.m; sourceTree = "<group>"; };
+		185DB19C1EEC90C2004A575C /* iToys-Label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iToys-Label.png"; sourceTree = "<group>"; };
+		185DB19E1EEDC324004A575C /* carrito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrito.png; sourceTree = "<group>"; };
+		185DB1A01EEDD055004A575C /* VentaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VentaVC.h; sourceTree = "<group>"; };
+		185DB1A11EEDD055004A575C /* VentaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VentaVC.m; sourceTree = "<group>"; };
+		18607CE21EE9FFB10039C1A6 /* ReportesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportesVC.h; sourceTree = "<group>"; };
+		18607CE31EE9FFB10039C1A6 /* ReportesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportesVC.m; sourceTree = "<group>"; };
+		188901221EEBCE9100D194E5 /* ManejadorSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManejadorSQLite.h; sourceTree = "<group>"; };
+		188901231EEBCE9100D194E5 /* ManejadorSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManejadorSQLite.m; sourceTree = "<group>"; };
+		189E96221EE780CF003E85C0 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		189E96231EE780CF003E85C0 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		189E962C1EE785EA003E85C0 /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		189E962D1EE785EA003E85C0 /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		18C8CF4A1EEAF85300A9C1CD /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		18C8CF4B1EEAF85300A9C1CD /* Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Window.m; sourceTree = "<group>"; };
+		18E942A21EE9A08700C1A910 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		18E942A41EE9A29300C1A910 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		18E942A61EE9A51C00C1A910 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18E942AB1EE9BF6F00C1A910 /* InventarioVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventarioVC.h; sourceTree = "<group>"; };
+		18E942AC1EE9BF6F00C1A910 /* InventarioVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventarioVC.m; sourceTree = "<group>"; };
+		18EF9B901E947521004D66C9 /* Jugueteria_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jugueteria_OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EF9B931E947521004D66C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18EF9B941E947521004D66C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18EF9B971E947521004D66C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18EF9B9C1E947521004D66C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18EF9B9F1E947521004D66C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18EF9BA11E947521004D66C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EF9BA81E947A84004D66C9 /* Producto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Producto.h; sourceTree = "<group>"; };
+		18EF9BA91E947A84004D66C9 /* Producto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Producto.m; sourceTree = "<group>"; };
+		18EF9BAC1E947D96004D66C9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18EF9B8D1E947521004D66C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EF9BAD1E947D97004D66C9 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		185DB1A31EEDD058004A575C /* Venta */ = {
+			isa = PBXGroup;
+			children = (
+				185DB1A01EEDD055004A575C /* VentaVC.h */,
+				185DB1A11EEDD055004A575C /* VentaVC.m */,
+			);
+			name = Venta;
+			sourceTree = "<group>";
+		};
+		18607CE51EE9FFB50039C1A6 /* Reportes */ = {
+			isa = PBXGroup;
+			children = (
+				18607CE21EE9FFB10039C1A6 /* ReportesVC.h */,
+				18607CE31EE9FFB10039C1A6 /* ReportesVC.m */,
+			);
+			name = Reportes;
+			sourceTree = "<group>";
+		};
+		189E96251EE780D8003E85C0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				189E96261EE780E3003E85C0 /* Login */,
+				189E962B1EE785AE003E85C0 /* TabView */,
+				18607CE51EE9FFB50039C1A6 /* Reportes */,
+				18E942AE1EE9BF7400C1A910 /* Inventario */,
+				189E96271EE780F3003E85C0 /* Alimentador Inventario */,
+				185DB1A31EEDD058004A575C /* Venta */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		189E96261EE780E3003E85C0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				189E96221EE780CF003E85C0 /* LoginVC.h */,
+				189E96231EE780CF003E85C0 /* LoginVC.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		189E96271EE780F3003E85C0 /* Alimentador Inventario */ = {
+			isa = PBXGroup;
+			children = (
+				182E6DD51E968A03007D4317 /* AlimentadorInventarioVC.h */,
+				182E6DD61E968A03007D4317 /* AlimentadorInventarioVC.m */,
+			);
+			name = "Alimentador Inventario";
+			sourceTree = "<group>";
+		};
+		189E96281EE78115003E85C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18EF9BA71E947A75004D66C9 /* Producto */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		189E962B1EE785AE003E85C0 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				189E962C1EE785EA003E85C0 /* TabViewController.h */,
+				189E962D1EE785EA003E85C0 /* TabViewController.m */,
+			);
+			name = TabView;
+			sourceTree = "<group>";
+		};
+		18C8CF501EEB034900A9C1CD /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				18C8CF4A1EEAF85300A9C1CD /* Window.h */,
+				18C8CF4B1EEAF85300A9C1CD /* Window.m */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
+		18E942AE1EE9BF7400C1A910 /* Inventario */ = {
+			isa = PBXGroup;
+			children = (
+				18E942AB1EE9BF6F00C1A910 /* InventarioVC.h */,
+				18E942AC1EE9BF6F00C1A910 /* InventarioVC.m */,
+			);
+			name = Inventario;
+			sourceTree = "<group>";
+		};
+		18EF9B871E947521004D66C9 = {
+			isa = PBXGroup;
+			children = (
+				18EF9B921E947521004D66C9 /* Jugueteria_OSX */,
+				18EF9B911E947521004D66C9 /* Products */,
+				18EF9BAB1E947D96004D66C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18EF9B911E947521004D66C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18EF9B901E947521004D66C9 /* Jugueteria_OSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18EF9B921E947521004D66C9 /* Jugueteria_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				189E96281EE78115003E85C0 /* Model */,
+				189E96251EE780D8003E85C0 /* ViewControllers */,
+				18EF9BAE1E947DE5004D66C9 /* SQLite */,
+				18EF9B931E947521004D66C9 /* AppDelegate.h */,
+				18EF9B941E947521004D66C9 /* AppDelegate.m */,
+				18EF9B9C1E947521004D66C9 /* Assets.xcassets */,
+				18EF9B9E1E947521004D66C9 /* Main.storyboard */,
+				18EF9BA11E947521004D66C9 /* Info.plist */,
+				18EF9B961E947521004D66C9 /* Supporting Files */,
+				18C8CF501EEB034900A9C1CD /* Window */,
+			);
+			path = Jugueteria_OSX;
+			sourceTree = "<group>";
+		};
+		18EF9B961E947521004D66C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				185DB19E1EEDC324004A575C /* carrito.png */,
+				185DB19C1EEC90C2004A575C /* iToys-Label.png */,
+				18EF9B971E947521004D66C9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18EF9BA71E947A75004D66C9 /* Producto */ = {
+			isa = PBXGroup;
+			children = (
+				18EF9BA81E947A84004D66C9 /* Producto.h */,
+				18EF9BA91E947A84004D66C9 /* Producto.m */,
+			);
+			name = Producto;
+			sourceTree = "<group>";
+		};
+		18EF9BAB1E947D96004D66C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E942A61EE9A51C00C1A910 /* QuartzCore.framework */,
+				18E942A41EE9A29300C1A910 /* CoreImage.framework */,
+				18E942A21EE9A08700C1A910 /* AppKit.framework */,
+				18EF9BAC1E947D96004D66C9 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18EF9BAE1E947DE5004D66C9 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				09FCA8E01E971F1D000D48F2 /* JugueteriaBD.db */,
+				188901221EEBCE9100D194E5 /* ManejadorSQLite.h */,
+				188901231EEBCE9100D194E5 /* ManejadorSQLite.m */,
+			);
+			name = SQLite;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18EF9B8F1E947521004D66C9 /* Jugueteria_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18EF9BA41E947521004D66C9 /* Build configuration list for PBXNativeTarget "Jugueteria_OSX" */;
+			buildPhases = (
+				18EF9B8C1E947521004D66C9 /* Sources */,
+				18EF9B8D1E947521004D66C9 /* Frameworks */,
+				18EF9B8E1E947521004D66C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jugueteria_OSX;
+			productName = Jugueteria_OSX;
+			productReference = 18EF9B901E947521004D66C9 /* Jugueteria_OSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18EF9B881E947521004D66C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Iván Pacheco";
+				TargetAttributes = {
+					18EF9B8F1E947521004D66C9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ACJ44FJ4J7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 18EF9B8B1E947521004D66C9 /* Build configuration list for PBXProject "Jugueteria_OSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18EF9B871E947521004D66C9;
+			productRefGroup = 18EF9B911E947521004D66C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18EF9B8F1E947521004D66C9 /* Jugueteria_OSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18EF9B8E1E947521004D66C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185DB19F1EEDC324004A575C /* carrito.png in Resources */,
+				18EF9B9D1E947521004D66C9 /* Assets.xcassets in Resources */,
+				09FCA8E11E971F1D000D48F2 /* JugueteriaBD.db in Resources */,
+				18EF9BA01E947521004D66C9 /* Main.storyboard in Resources */,
+				185DB19D1EEC90C2004A575C /* iToys-Label.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18EF9B8C1E947521004D66C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E942AD1EE9BF6F00C1A910 /* InventarioVC.m in Sources */,
+				18EF9BAA1E947A84004D66C9 /* Producto.m in Sources */,
+				189E96241EE780CF003E85C0 /* LoginVC.m in Sources */,
+				18EF9B981E947521004D66C9 /* main.m in Sources */,
+				18607CE41EE9FFB10039C1A6 /* ReportesVC.m in Sources */,
+				188901241EEBCE9100D194E5 /* ManejadorSQLite.m in Sources */,
+				182E6DD81E968A03007D4317 /* AlimentadorInventarioVC.m in Sources */,
+				18C8CF4C1EEAF85300A9C1CD /* Window.m in Sources */,
+				189E962E1EE785EA003E85C0 /* TabViewController.m in Sources */,
+				185DB1A21EEDD055004A575C /* VentaVC.m in Sources */,
+				18EF9B951E947521004D66C9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18EF9B9E1E947521004D66C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18EF9B9F1E947521004D66C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18EF9BA21E947521004D66C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		18EF9BA31E947521004D66C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		18EF9BA51E947521004D66C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ACJ44FJ4J7;
+				INFOPLIST_FILE = Jugueteria_OSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ivanpacheco.a.test.Jugueteria-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18EF9BA61E947521004D66C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ACJ44FJ4J7;
+				INFOPLIST_FILE = Jugueteria_OSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ivanpacheco.a.test.Jugueteria-OSX";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18EF9B8B1E947521004D66C9 /* Build configuration list for PBXProject "Jugueteria_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EF9BA21E947521004D66C9 /* Debug */,
+				18EF9BA31E947521004D66C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18EF9BA41E947521004D66C9 /* Build configuration list for PBXNativeTarget "Jugueteria_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18EF9BA51E947521004D66C9 /* Debug */,
+				18EF9BA61E947521004D66C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18EF9B881E947521004D66C9 /* Project object */;
+}
