@@ -7,12 +7,20 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ManejadorSQLite.h"
 
-@interface ReportesVC : NSViewController
 
+@interface ReportesVC : NSViewController{
+    ManejadorSQLite *msqlite;
+
+}
+
+@property (weak) IBOutlet NSSegmentedControl *SegmentedControl;
+@property (weak) IBOutlet NSTableView *tablaReporte;
 
 -(IBAction)CargarViewControllerAsPopup:(id)sender;
-
 - (IBAction)CerrarVC:(id)sender;
+- (IBAction)OnChangeSegmentedControl:(id)sender;
 
+-(void)CargarReporte;
 @end

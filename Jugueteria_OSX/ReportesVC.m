@@ -7,7 +7,6 @@
 //
 
 #import "ReportesVC.h"
-
 @interface ReportesVC ()
 
 @end
@@ -16,14 +15,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    msqlite = [[ManejadorSQLite alloc]init];
+    [self CargarReporte];
 }
-
+-(void)CargarReporte{
+    NSInteger selectedTab = [_SegmentedControl selectedSegment];
+    if (selectedTab == 0)//Venta
+    {
+        
+    }
+    else
+    {//Entradas de Almacen
+    
+    
+    }
+}
 -(IBAction)CargarViewControllerAsPopup:(id)sender{
     
 }
 
 - (IBAction)CerrarVC:(id)sender {
     [self dismissController:nil];
+}
+- (IBAction)OnChangeSegmentedControl:(id)sender {
+    
+    
 }
 @end

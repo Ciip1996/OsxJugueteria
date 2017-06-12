@@ -457,19 +457,6 @@ CA
             </objects>
             <point key="canvasLocation" x="76" y="-293"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="mt1-zZ-eYV">
-            <objects>
-                <viewController id="12W-Ed-q5h" sceneMemberID="viewController">
-                    <view key="view" id="byw-VY-9qh">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="jlL-9E-UnN" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-696" y="-65"/>
-        </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
@@ -1497,24 +1484,24 @@ EFRvdGFsOg
             <objects>
                 <viewController title="Reportes" id="wbM-Ko-4dW" customClass="ReportesVC" sceneMemberID="viewController">
                     <view key="view" id="9AI-xz-29I">
-                        <rect key="frame" x="0.0" y="0.0" width="424" height="345"/>
+                        <rect key="frame" x="0.0" y="0.0" width="424" height="326"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY8-1w-WGR">
-                                <rect key="frame" x="26" y="50" width="378" height="233"/>
+                                <rect key="frame" x="26" y="50" width="378" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" ambiguous="YES" id="Ncu-pl-Ypd">
-                                    <rect key="frame" x="1" y="0.0" width="376" height="232"/>
+                                    <rect key="frame" x="1" y="0.0" width="376" height="213"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="aty-HH-QxM" id="uxp-7Y-kkq">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="209"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="62" minWidth="40" maxWidth="1000" id="akN-Xv-gqR">
+                                                <tableColumn identifier="Codigo" width="62" minWidth="40" maxWidth="1000" id="akN-Xv-gqR">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Código">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1527,7 +1514,7 @@ EFRvdGFsOg
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 </tableColumn>
-                                                <tableColumn width="109" minWidth="40" maxWidth="1000" id="k1x-Yl-sk3">
+                                                <tableColumn identifier="Empleado" width="109" minWidth="40" maxWidth="1000" id="k1x-Yl-sk3">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Empleado">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1540,7 +1527,7 @@ EFRvdGFsOg
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 </tableColumn>
-                                                <tableColumn width="101" minWidth="40" maxWidth="1000" id="FIl-Ty-r6e">
+                                                <tableColumn identifier="Fecha" width="101" minWidth="40" maxWidth="1000" id="FIl-Ty-r6e">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Fecha">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1553,7 +1540,7 @@ EFRvdGFsOg
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 </tableColumn>
-                                                <tableColumn width="92" minWidth="40" maxWidth="1000" id="I7M-XO-rSv">
+                                                <tableColumn identifier="CostoVenta" width="92" minWidth="40" maxWidth="1000" id="I7M-XO-rSv">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Costo Total">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1571,11 +1558,11 @@ EFRvdGFsOg
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="gdx-h0-nJY">
-                                    <rect key="frame" x="-7" y="8" width="0.0" height="15"/>
+                                    <rect key="frame" x="1" y="7" width="0.0" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="zUo-7Y-COb">
-                                    <rect key="frame" x="-14" y="16" width="15" height="0.0"/>
+                                    <rect key="frame" x="-15" y="23" width="16" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="aty-HH-QxM">
@@ -1584,7 +1571,7 @@ EFRvdGFsOg
                                 </tableHeaderView>
                             </scrollView>
                             <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vyj-Os-euU">
-                                <rect key="frame" x="117" y="301" width="192" height="24"/>
+                                <rect key="frame" x="117" y="282" width="192" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="UY7-W7-cnB">
                                     <font key="font" metaFont="system"/>
@@ -1593,9 +1580,12 @@ EFRvdGFsOg
                                         <segment label="Entradas Almacen" tag="1"/>
                                     </segments>
                                 </segmentedCell>
+                                <connections>
+                                    <action selector="OnChangeSegmentedControl:" target="wbM-Ko-4dW" id="oV5-6m-a7N"/>
+                                </connections>
                             </segmentedControl>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPy-Ls-cCx">
-                                <rect key="frame" x="168" y="18" width="88" height="25"/>
+                                <rect key="frame" x="169" y="18" width="88" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="roundTextured" title="Salir" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KS1-gp-Suh">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1607,10 +1597,14 @@ EFRvdGFsOg
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="SegmentedControl" destination="Vyj-Os-euU" id="JCp-4a-qSu"/>
+                        <outlet property="tablaReporte" destination="uxp-7Y-kkq" id="91x-S8-hnM"/>
+                    </connections>
                 </viewController>
                 <customObject id="qjB-7a-Nox" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-661" y="741.5"/>
+            <point key="canvasLocation" x="-661" y="732"/>
         </scene>
         <!--iToy System-->
         <scene sceneID="uw5-5a-tTZ">
