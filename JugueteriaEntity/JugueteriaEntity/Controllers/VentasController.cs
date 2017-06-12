@@ -44,7 +44,7 @@ namespace JugueteriaEntity.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != venta.Id)
+            if (id != venta.IdVenta)
             {
                 return BadRequest();
             }
@@ -82,7 +82,7 @@ namespace JugueteriaEntity.Controllers
             db.Ventas.Add(venta);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = venta.Id }, venta);
+            return CreatedAtRoute("DefaultApi", new { id = venta.IdVenta }, venta);
         }
 
         // DELETE: api/Ventas/5
@@ -112,7 +112,7 @@ namespace JugueteriaEntity.Controllers
 
         private bool VentaExists(long id)
         {
-            return db.Ventas.Count(e => e.Id == id) > 0;
+            return db.Ventas.Count(e => e.IdVenta == id) > 0;
         }
     }
 }

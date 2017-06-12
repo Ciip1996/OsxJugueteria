@@ -44,7 +44,7 @@ namespace JugueteriaEntity.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != empleado.Id)
+            if (id != empleado.IdEmpleado)
             {
                 return BadRequest();
             }
@@ -82,7 +82,7 @@ namespace JugueteriaEntity.Controllers
             db.Empleadoes.Add(empleado);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = empleado.Id }, empleado);
+            return CreatedAtRoute("DefaultApi", new { id = empleado.IdEmpleado }, empleado);
         }
 
         // DELETE: api/Empleados/5
@@ -112,7 +112,7 @@ namespace JugueteriaEntity.Controllers
 
         private bool EmpleadoExists(long id)
         {
-            return db.Empleadoes.Count(e => e.Id == id) > 0;
+            return db.Empleadoes.Count(e => e.IdEmpleado == id) > 0;
         }
     }
 }

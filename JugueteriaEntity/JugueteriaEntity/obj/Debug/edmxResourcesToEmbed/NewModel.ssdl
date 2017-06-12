@@ -14,6 +14,16 @@
     <Property Name="IdCliente" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <EntityType Name="dbo_DetalleBitacora">
+    <Key>
+      <PropertyRef Name="IdDetalleBitacora" />
+    </Key>
+    <Property Name="IdDetalleBitacora" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdBitacora" Type="bigint" Nullable="false" />
+    <Property Name="IdProducto" Type="bigint" Nullable="false" />
+    <Property Name="Cantidad" Type="bigint" Nullable="false" />
+    <Property Name="PrecioCompra" Type="float" Nullable="false" />
+  </EntityType>
   <EntityType Name="DetalleVenta">
     <Key>
       <PropertyRef Name="IdDetalleVenta" />
@@ -61,6 +71,16 @@
     <Property Name="Cantidad" Type="int" />
     <Property Name="PrecioVenta" Type="float" />
   </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="Usuario">
     <Key>
       <PropertyRef Name="IdUsuario" />
@@ -81,6 +101,30 @@
     <Property Name="FormaPago" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Estatus" Type="varchar" MaxLength="50" />
   </EntityType>
+  <Association Name="FK_dbo_DetalleBitacora_Bita">
+    <End Role="Bitacora" Type="Self.Bitacora" Multiplicity="1" />
+    <End Role="dbo_DetalleBitacora" Type="Self.dbo_DetalleBitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bitacora">
+        <PropertyRef Name="IdBitacora" />
+      </Principal>
+      <Dependent Role="dbo_DetalleBitacora">
+        <PropertyRef Name="IdBitacora" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_DetalleBitacora_Bitacora">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="dbo_DetalleBitacora" Type="Self.dbo_DetalleBitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="dbo_DetalleBitacora">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_DetalleVenta_Producto">
     <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
     <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
@@ -156,12 +200,22 @@
   <EntityContainer Name="JugueteriaBDModelStoreContainer">
     <EntitySet Name="Bitacora" EntityType="Self.Bitacora" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dbo_DetalleBitacora" EntityType="Self.dbo_DetalleBitacora" Schema="dbo" Table="dbo.DetalleBitacora" store:Type="Tables" />
     <EntitySet Name="DetalleVenta" EntityType="Self.DetalleVenta" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Persona" EntityType="Self.Persona" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Producto" EntityType="Self.Producto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Venta" EntityType="Self.Venta" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_DetalleBitacora_Bita" Association="Self.FK_dbo_DetalleBitacora_Bita">
+      <End Role="Bitacora" EntitySet="Bitacora" />
+      <End Role="dbo_DetalleBitacora" EntitySet="dbo_DetalleBitacora" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_DetalleBitacora_Bitacora" Association="Self.FK_dbo_DetalleBitacora_Bitacora">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="dbo_DetalleBitacora" EntitySet="dbo_DetalleBitacora" />
+    </AssociationSet>
     <AssociationSet Name="FK_DetalleVenta_Producto" Association="Self.FK_DetalleVenta_Producto">
       <End Role="Producto" EntitySet="Producto" />
       <End Role="DetalleVenta" EntitySet="DetalleVenta" />

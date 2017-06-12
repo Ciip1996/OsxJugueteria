@@ -44,7 +44,7 @@ namespace JugueteriaEntity.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != bitacora.Id)
+            if (id != bitacora.IdBitacora)
             {
                 return BadRequest();
             }
@@ -82,7 +82,7 @@ namespace JugueteriaEntity.Controllers
             db.Bitacoras.Add(bitacora);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = bitacora.Id }, bitacora);
+            return CreatedAtRoute("DefaultApi", new { id = bitacora.IdBitacora }, bitacora);
         }
 
         // DELETE: api/Bitacoras/5
@@ -112,7 +112,7 @@ namespace JugueteriaEntity.Controllers
 
         private bool BitacoraExists(long id)
         {
-            return db.Bitacoras.Count(e => e.Id == id) > 0;
+            return db.Bitacoras.Count(e => e.IdBitacora == id) > 0;
         }
     }
 }
