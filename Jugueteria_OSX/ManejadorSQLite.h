@@ -13,6 +13,7 @@
 #import "Producto.h"
 #import "Empleado.h"
 #import "Response.h"
+#import "Reporte.h"
 
 @interface ManejadorSQLite : NSObject
 {
@@ -33,6 +34,9 @@
 -(Response*)Login:(NSString*)usuario yContraseña:(NSString*)contraseña;
 
 -(NSObject*)traerEmpleado:(NSString*)usuario yContraseña:(NSString*)contraseña;
+
+-(NSMutableArray*)SelectSomething:(NSString*)query;
+
 
 -(id)init;
 

@@ -26,7 +26,9 @@
     }
     else
     {//Entradas de Almacen
-    
+        NSString *query = [NSString stringWithFormat:@"SELECT B.IdBitacora, B.FechaAbastecimiento,  Per.Nombre FROM  Bitacora AS B INNER JOIN Empleado AS E ON E.IdEmpleado = B.IdEmpleado INNER JOIN Persona AS Per ON Per.IdPersona = E.IdPersona"];
+        listaTabla = [msqlite SelectSomething:query];
+        [_tablaReporte reloadData];
     
     }
 }
@@ -40,5 +42,15 @@
 - (IBAction)OnChangeSegmentedControl:(id)sender {
     
     
+}
+/*NSTableViewController methods to handle datasource*/
+-(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView{
+    return   [listaTabla count];
+}
+-(id) tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row{
+    Producto *producto = [listaTabla objectAtIndex:row];
+    NSString *identifier = [tableColumn identifier];
+    NSString *columna = [producto valueForKey:identifier];
+    return columna;
 }
 @end

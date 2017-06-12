@@ -10,9 +10,10 @@
 #import "ManejadorSQLite.h"
 
 
-@interface ReportesVC : NSViewController{
+@interface ReportesVC : NSViewController<NSTableViewDataSource>
+{
     ManejadorSQLite *msqlite;
-
+    NSMutableArray *listaTabla;
 }
 
 @property (weak) IBOutlet NSSegmentedControl *SegmentedControl;

@@ -185,6 +185,37 @@
 }
 
 
-
+-(NSMutableArray*)SelectSomething:(NSString*)query{
+    NSMutableArray *listaObjetos = [[NSMutableArray alloc]init];
+    [listaObjetos removeAllObjects];
+    //abrimos la base de datos de la ruta indicada en el delegate
+    if (sqlite3_open([appdelegate.databasepath UTF8String], &database)==SQLITE_OK)
+    {
+        //podriamos seleccionar solo algunos o todos en el orden deseado asi:
+        //lanzamos la consulta y recorremos los resultados si todo ha salido bien
+        if (sqlite3_prepare_v2(database, [query UTF8String], -1, &CompiledStatement, NULL)==SQLITE_OK)
+        {
+            //recorremos  los resultados. en este caso no habra
+            while (sqlite3_step(CompiledStatement)==SQLITE_ROW)
+            {
+                //leemos las columnas necesarias.aunque algunos valores son numericos prefiero recuperarlos en string y convertirlos luego porque da menos problemas
+                Reporte *reporte = [[Reporte alloc]init];
+                [reporte setIdBitacora:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 0)]];
+                [reporte setFechaAbastecimiento:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 1)]];
+                [reporte setNombrePersona:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 2)]];
+                [listaObjetos addObject:reporte];
+            }
+        }else
+        {
+            //indico si hubo un error
+            NSLog(@"No se puede leer los datos");
+        }
+        //libero la consulta
+        sqlite3_finalize(CompiledStatement);
+    }
+    //cierro la base de datos
+    sqlite3_close(database);
+    return listaElementos;
+}
 
 @end

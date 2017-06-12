@@ -20,6 +20,7 @@
 		18B249B41EEEBE0B007EAF5E /* Venta.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249B31EEEBE0B007EAF5E /* Venta.m */; };
 		18B249B71EEEC299007EAF5E /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249B61EEEC299007EAF5E /* Persona.m */; };
 		18B249BC1EEEC701007EAF5E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249BB1EEEC701007EAF5E /* Response.m */; };
+		18B249BF1EEF0932007EAF5E /* Reporte.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249BE1EEF0932007EAF5E /* Reporte.m */; };
 		18C8CF4C1EEAF85300A9C1CD /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8CF4B1EEAF85300A9C1CD /* Window.m */; };
 		18E942AD1EE9BF6F00C1A910 /* InventarioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E942AC1EE9BF6F00C1A910 /* InventarioVC.m */; };
 		18EF9B951E947521004D66C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9B941E947521004D66C9 /* AppDelegate.m */; };
@@ -54,6 +55,8 @@
 		18B249B61EEEC299007EAF5E /* Persona.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persona.m; sourceTree = "<group>"; };
 		18B249BA1EEEC701007EAF5E /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
 		18B249BB1EEEC701007EAF5E /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
+		18B249BD1EEF0932007EAF5E /* Reporte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reporte.h; sourceTree = "<group>"; };
+		18B249BE1EEF0932007EAF5E /* Reporte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reporte.m; sourceTree = "<group>"; };
 		18C8CF4A1EEAF85300A9C1CD /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
 		18C8CF4B1EEAF85300A9C1CD /* Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Window.m; sourceTree = "<group>"; };
 		18E942A21EE9A08700C1A910 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -137,6 +140,7 @@
 		189E96281EE78115003E85C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18B249C01EEF096C007EAF5E /* Reporte */,
 				18B249B91EEEC6EC007EAF5E /* Response */,
 				18B249B11EEEBDFC007EAF5E /* Venta */,
 				18B249B01EEEBDED007EAF5E /* Empleado */,
@@ -189,6 +193,15 @@
 				18B249BB1EEEC701007EAF5E /* Response.m */,
 			);
 			name = Response;
+			sourceTree = "<group>";
+		};
+		18B249C01EEF096C007EAF5E /* Reporte */ = {
+			isa = PBXGroup;
+			children = (
+				18B249BD1EEF0932007EAF5E /* Reporte.h */,
+				18B249BE1EEF0932007EAF5E /* Reporte.m */,
+			);
+			name = Reporte;
 			sourceTree = "<group>";
 		};
 		18C8CF501EEB034900A9C1CD /* Window */ = {
@@ -362,6 +375,7 @@
 				18EF9BAA1E947A84004D66C9 /* Producto.m in Sources */,
 				189E96241EE780CF003E85C0 /* LoginVC.m in Sources */,
 				18B249B71EEEC299007EAF5E /* Persona.m in Sources */,
+				18B249BF1EEF0932007EAF5E /* Reporte.m in Sources */,
 				18EF9B981E947521004D66C9 /* main.m in Sources */,
 				18607CE41EE9FFB10039C1A6 /* ReportesVC.m in Sources */,
 				188901241EEBCE9100D194E5 /* ManejadorSQLite.m in Sources */,
