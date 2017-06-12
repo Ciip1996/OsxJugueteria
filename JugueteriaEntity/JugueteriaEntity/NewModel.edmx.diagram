@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8bcabaf365ce425ba15a3a6ced09f931" Name="Diagram1">
+        <EntityTypeShape EntityType="JugueteriaBDModel.Bitacora" Width="1.5" PointX="7.75" PointY="0.875" />
+        <EntityTypeShape EntityType="JugueteriaBDModel.Cliente" Width="1.5" PointX="5.75" PointY="1.25" />
+        <EntityTypeShape EntityType="JugueteriaBDModel.DetalleVenta" Width="1.5" PointX="3.625" PointY="1.5" />
+        <EntityTypeShape EntityType="JugueteriaBDModel.Empleado" Width="1.5" PointX="1.5" PointY="1.5" />
+        <EntityTypeShape EntityType="JugueteriaBDModel.Persona" Width="1.5" PointX="8.75" PointY="4.25" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_Empleado_Persona" />
+        <EntityTypeShape EntityType="JugueteriaBDModel.Producto" Width="1.5" PointX="6.5" PointY="4.75" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_Bitacora_Producto" />
+        <EntityTypeShape EntityType="JugueteriaBDModel.Usuario" Width="1.5" PointX="4.25" PointY="5.625" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_Usuario_Empleado" />
+        <EntityTypeShape EntityType="JugueteriaBDModel.Venta" Width="1.5" PointX="1.625" PointY="6.625" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_Venta_Cliente" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_DetalleVenta_Producto" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_DetalleVenta_Venta" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_DetalleVenta_Ventas" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_Venta_Empleado" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_Venta_Cliente1" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_DetalleVenta_Producto1" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_DetalleVenta_Venta1" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_Empleado_Empleado" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_Usuario_Empleado1" />
+        <AssociationConnector Association="JugueteriaBDModel.FK_Venta_Empleado1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

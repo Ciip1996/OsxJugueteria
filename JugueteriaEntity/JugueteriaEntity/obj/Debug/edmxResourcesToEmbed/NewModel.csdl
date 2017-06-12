@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JugueteriaBDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bitacora">
+    <Key>
+      <PropertyRef Name="IdBitacora" />
+    </Key>
+    <Property Name="FechaAbastecimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK_Bitacora_Producto" FromRole="Bitacora" ToRole="Producto" />
+    <Property Name="IdBitacora" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Ventas" Relationship="Self.FK_Venta_Cliente" FromRole="Cliente" ToRole="Venta" />
+    <Property Name="IdCliente" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Ventas1" Relationship="JugueteriaBDModel.FK_Venta_Cliente1" FromRole="Cliente" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="DetalleVenta">
+    <Key>
+      <PropertyRef Name="IdDetalleVenta" />
+    </Key>
+    <NavigationProperty Name="Venta" Relationship="Self.FK_DetalleVenta_Producto" FromRole="DetalleVenta" ToRole="Venta" />
+    <NavigationProperty Name="Venta1" Relationship="Self.FK_DetalleVenta_Venta" FromRole="DetalleVenta" ToRole="Venta" />
+    <NavigationProperty Name="Venta2" Relationship="Self.FK_DetalleVenta_Ventas" FromRole="DetalleVenta" ToRole="Venta" />
+    <Property Name="IdDetalleVenta" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdVenta" Type="Int64" Nullable="false" />
+    <Property Name="IdProducto" Type="Int64" Nullable="false" />
+    <Property Name="Cantidad" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="JugueteriaBDModel.FK_DetalleVenta_Producto1" FromRole="DetalleVenta" ToRole="Producto" />
+    <NavigationProperty Name="Venta3" Relationship="JugueteriaBDModel.FK_DetalleVenta_Venta1" FromRole="DetalleVenta" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Salario" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Empleado_Persona" FromRole="Empleado" ToRole="Persona" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK_Usuario_Empleado" FromRole="Empleado" ToRole="Usuario" />
+    <NavigationProperty Name="Ventas" Relationship="Self.FK_Venta_Empleado" FromRole="Empleado" ToRole="Venta" />
+    <Property Name="IdEmpleado" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPersona" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="JugueteriaBDModel.FK_Venta_Cliente1" FromRole="Empleado" ToRole="Cliente" />
+    <NavigationProperty Name="DetalleVentas" Relationship="JugueteriaBDModel.FK_DetalleVenta_Venta1" FromRole="Empleado" ToRole="DetalleVenta" />
+    <NavigationProperty Name="Persona1" Relationship="JugueteriaBDModel.FK_Empleado_Empleado" FromRole="Empleado" ToRole="Persona" />
+    <NavigationProperty Name="Usuarios1" Relationship="JugueteriaBDModel.FK_Usuario_Empleado1" FromRole="Empleado" ToRole="Usuario" />
+    <NavigationProperty Name="Ventas1" Relationship="JugueteriaBDModel.FK_Venta_Empleado1" FromRole="Empleado" ToRole="Empleado1" />
+    <NavigationProperty Name="Empleado1" Relationship="JugueteriaBDModel.FK_Venta_Empleado1" FromRole="Empleado1" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="IdPersona" />
+    </Key>
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Curp" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Rfc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Genero" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estatus" Type="Byte" Nullable="false" />
+    <NavigationProperty Name="Empleadoes" Relationship="Self.FK_Empleado_Persona" FromRole="Persona" ToRole="Empleado" />
+    <Property Name="IdPersona" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Empleadoes1" Relationship="JugueteriaBDModel.FK_Empleado_Empleado" FromRole="Persona" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IdProducto" />
+    </Key>
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Marca" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EdadMinima" Type="Int32" />
+    <Property Name="EdadMaxima" Type="Int32" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="PrecioVenta" Type="Double" />
+    <NavigationProperty Name="Bitacoras" Relationship="Self.FK_Bitacora_Producto" FromRole="Producto" ToRole="Bitacora" />
+    <Property Name="IdProducto" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="DetalleVentas" Relationship="JugueteriaBDModel.FK_DetalleVenta_Producto1" FromRole="Producto" ToRole="DetalleVenta" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="Usuario1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK_Usuario_Empleado" FromRole="Usuario" ToRole="Empleado" />
+    <Property Name="IdUsuario" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Contrasenia" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IdEmpleado" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Empleado1" Relationship="JugueteriaBDModel.FK_Usuario_Empleado1" FromRole="Usuario" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="IdVenta" />
+    </Key>
+    <Property Name="FechaVenta" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FormaPago" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK_Venta_Cliente" FromRole="Venta" ToRole="Cliente" />
+    <NavigationProperty Name="DetalleVentas" Relationship="Self.FK_DetalleVenta_Producto" FromRole="Venta" ToRole="DetalleVenta" />
+    <NavigationProperty Name="DetalleVentas1" Relationship="Self.FK_DetalleVenta_Venta" FromRole="Venta" ToRole="DetalleVenta" />
+    <NavigationProperty Name="DetalleVentas2" Relationship="Self.FK_DetalleVenta_Ventas" FromRole="Venta" ToRole="DetalleVenta" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK_Venta_Empleado" FromRole="Venta" ToRole="Empleado" />
+    <Property Name="IdVenta" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEmpleado" Type="Int64" Nullable="false" />
+    <Property Name="IdCliente" Type="Int64" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Bitacora_Producto">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="1" />
+    <End Role="Bitacora" Type="Self.Bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto" />
+      <Dependent Role="Bitacora" />
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Venta_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Venta" Type="Self.Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente" />
+      <Dependent Role="Venta" />
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleVenta_Producto">
+    <End Role="Venta" Type="Self.Venta" Multiplicity="1" />
+    <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venta" />
+      <Dependent Role="DetalleVenta" />
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleVenta_Venta">
+    <End Role="Venta" Type="Self.Venta" Multiplicity="1" />
+    <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venta" />
+      <Dependent Role="DetalleVenta" />
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleVenta_Ventas">
+    <End Role="Venta" Type="Self.Venta" Multiplicity="1" />
+    <End Role="DetalleVenta" Type="Self.DetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venta" />
+      <Dependent Role="DetalleVenta" />
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleado_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona" />
+      <Dependent Role="Empleado" />
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Empleado">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado" />
+      <Dependent Role="Usuario" />
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Venta_Empleado">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="Venta" Type="Self.Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado" />
+      <Dependent Role="Venta" />
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="JugueteriaBDEntitiesNew" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bitacoras" EntityType="Self.Bitacora" />
+    <EntitySet Name="Clientes" EntityType="Self.Cliente" />
+    <EntitySet Name="DetalleVentas" EntityType="Self.DetalleVenta" />
+    <EntitySet Name="Empleadoes" EntityType="Self.Empleado" />
+    <EntitySet Name="Personas" EntityType="Self.Persona" />
+    <EntitySet Name="Productoes" EntityType="Self.Producto" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+    <EntitySet Name="Ventas" EntityType="Self.Venta" />
+    <AssociationSet Name="FK_Bitacora_Producto" Association="Self.FK_Bitacora_Producto">
+      <End Role="Producto" EntitySet="Productoes" />
+      <End Role="Bitacora" EntitySet="Bitacoras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Venta_Cliente" Association="Self.FK_Venta_Cliente">
+      <End Role="Cliente" EntitySet="Clientes" />
+      <End Role="Venta" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleVenta_Producto" Association="Self.FK_DetalleVenta_Producto">
+      <End Role="Venta" EntitySet="Ventas" />
+      <End Role="DetalleVenta" EntitySet="DetalleVentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleVenta_Venta" Association="Self.FK_DetalleVenta_Venta">
+      <End Role="Venta" EntitySet="Ventas" />
+      <End Role="DetalleVenta" EntitySet="DetalleVentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleVenta_Ventas" Association="Self.FK_DetalleVenta_Ventas">
+      <End Role="Venta" EntitySet="Ventas" />
+      <End Role="DetalleVenta" EntitySet="DetalleVentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleado_Persona" Association="Self.FK_Empleado_Persona">
+      <End Role="Persona" EntitySet="Personas" />
+      <End Role="Empleado" EntitySet="Empleadoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Empleado" Association="Self.FK_Usuario_Empleado">
+      <End Role="Empleado" EntitySet="Empleadoes" />
+      <End Role="Usuario" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Venta_Empleado" Association="Self.FK_Venta_Empleado">
+      <End Role="Empleado" EntitySet="Empleadoes" />
+      <End Role="Venta" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Venta_Cliente1" Association="JugueteriaBDModel.FK_Venta_Cliente1">
+      <End Role="Cliente" EntitySet="Clientes" />
+      <End Role="Empleado" EntitySet="Empleadoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleVenta_Producto1" Association="JugueteriaBDModel.FK_DetalleVenta_Producto1">
+      <End Role="Producto" EntitySet="Productoes" />
+      <End Role="DetalleVenta" EntitySet="DetalleVentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetalleVenta_Venta1" Association="JugueteriaBDModel.FK_DetalleVenta_Venta1">
+      <End Role="Empleado" EntitySet="Empleadoes" />
+      <End Role="DetalleVenta" EntitySet="DetalleVentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleado_Empleado" Association="JugueteriaBDModel.FK_Empleado_Empleado">
+      <End Role="Persona" EntitySet="Personas" />
+      <End Role="Empleado" EntitySet="Empleadoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Empleado1" Association="JugueteriaBDModel.FK_Usuario_Empleado1">
+      <End Role="Empleado" EntitySet="Empleadoes" />
+      <End Role="Usuario" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Venta_Empleado1" Association="JugueteriaBDModel.FK_Venta_Empleado1">
+      <End Role="Empleado" EntitySet="Empleadoes" />
+      <End Role="Empleado1" EntitySet="Empleadoes" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_Venta_Cliente1">
+    <End Type="JugueteriaBDModel.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="JugueteriaBDModel.Empleado" Role="Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleVenta_Producto1">
+    <End Type="JugueteriaBDModel.Producto" Role="Producto" Multiplicity="1" />
+    <End Type="JugueteriaBDModel.DetalleVenta" Role="DetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="DetalleVenta">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetalleVenta_Venta1">
+    <End Type="JugueteriaBDModel.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="JugueteriaBDModel.DetalleVenta" Role="DetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado" />
+      <Dependent Role="DetalleVenta" />
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleado_Empleado">
+    <End Type="JugueteriaBDModel.Persona" Role="Persona" Multiplicity="1" />
+    <End Type="JugueteriaBDModel.Empleado" Role="Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Empleado1">
+    <End Type="JugueteriaBDModel.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="JugueteriaBDModel.Usuario" Role="Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="IdEmpleado" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="IdEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Venta_Empleado1">
+    <End Type="JugueteriaBDModel.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="JugueteriaBDModel.Empleado" Role="Empleado1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="IdEmpleado" />
+      </Principal>
+      <Dependent Role="Empleado1">
+        <PropertyRef Name="IdEmpleado1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
