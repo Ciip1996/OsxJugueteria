@@ -9,6 +9,7 @@
 #import "LoginVC.h"
 #import "TabViewController.h"
 #import "InventarioVC.h"
+#import "Response.h"
 
 @interface LoginVC ()
 
@@ -19,28 +20,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    Ventana = [[LoginVC alloc]init];//inicializo mi Ventana.
+
     //LLAMAR EL APPDELEGATE DE LA APLICACION
     appdelegate = [[AppDelegate alloc] init];
     msqlite =  [[ManejadorSQLite alloc]init];
  }
 
 - (IBAction)btnEntrar:(id)sender {
-    NSString *usuario = [[NSString alloc] init];
-    NSString *contrasenia = [[NSString alloc] init];
-    usuario = [_txtUsuario stringValue];
-    contrasenia = [_txtContraseña stringValue];
-    //acceso a datos para comprobar contraseña y usuario
-    NSString*response = [msqlite Login:usuario yContraseña:contrasenia];
     
-    AppDelegate *obj = [AppDelegate getInstance];
-    obj.EmpleadoRol = response;
-
+    NSString *usuario = [[NSString alloc] initWithString:[_txtUsuario stringValue]];
+    NSString *contrasenia = [[NSString alloc] initWithString:[_txtContraseña stringValue]];
+    //acceso a datos para comprobar contraseña y usuario
+    Response *response = [msqlite Login:usuario yContraseña:contrasenia];
     if (response)
     {
+        appdelegate = [AppDelegate getInstance];
+        appdelegate.EmpleadoSesionActivo = [response Empleado];
         [self dismissController:nil];//cierra este view controller
-        NSWindowController *window = [[NSWindow alloc]init];
-        InventarioVC *inv = [[InventarioVC alloc]init];
     }
     else{
         [appdelegate MessageBox:@"Usuario o Contraseña Incorrectos, reviselos e intente nuevamente." andTitle:@"Fallo al Iniciar Sesión"];

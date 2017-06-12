@@ -13,7 +13,6 @@
 
 
 @interface LoginVC : NSViewController{
-    LoginVC *Ventana;
     AppDelegate *appdelegate;
     ManejadorSQLite *msqlite;
 }

@@ -11,7 +11,8 @@
 #import <sqlite3.h>
 #import "AppDelegate.h"
 #import "Producto.h"
-
+#import "Empleado.h"
+#import "Response.h"
 
 @interface ManejadorSQLite : NSObject
 {
@@ -24,9 +25,14 @@
 }
 
 -(Producto*)traerProducto:(int)Id;
+
 -(NSMutableArray*)traerProductos;
+
 -(BOOL)ExecuteSqlQuery:(NSString*)query;
--(NSString*)Login:(NSString*)usuario yContraseña:(NSString*)contraseña;
+
+-(Response*)Login:(NSString*)usuario yContraseña:(NSString*)contraseña;
+
+-(NSObject*)traerEmpleado:(NSString*)usuario yContraseña:(NSString*)contraseña;
 
 -(id)init;
 

@@ -112,8 +112,25 @@
         }
     }
   }
+
 - (IBAction)OnRealizarCompra:(id)sender {
-    //comparar cant de bd y de mi venta
+    //obtengo datos de venta:
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];// or @"yyyy-MM-dd hh:mm:ss a" if you prefer the time with AM/PM
+    NSString *fechaVenta = [dateFormatter stringFromDate:[NSDate date]];
+    
+    //Creo query para insertar Venta:
+    NSString *queryVenta = [NSString stringWithFormat:@"INSERT INTO Venta (IdEmpleado, FechaVenta, FormaPago, Estatus) VALUES (%d, '%@', '%@', %d);",1,fechaVenta,@"Efectivo",1];
+    [msqlite ExecuteSqlQuery:queryVenta];
+
+    
+    
+    
+    
+    
+    
+    
+    //Actualizar Inventario:
     for (id producto in listaTabla)
     {
         msqlite = [[ManejadorSQLite alloc]init];
@@ -127,6 +144,12 @@
         int cantidadNueva = cantidadAnteriorBD - cantidadArestar;
         NSString *query = [NSString stringWithFormat: @"UPDATE Producto SET cantidad = %d WHERE idProducto = %d;",cantidadNueva,[producto getIdProducto]];
         [msqlite ExecuteSqlQuery:query];
+        
+        NSString *queryDetalleVenta = [NSString stringWithFormat:@"INSERT INTO DetalleVenta (IdVenta, IdProducto, Cantidad) VALUES (%d, %@, %@,  %d);",1,fechaVenta,@"Efectivo",1];
+
+        [msqlite ExecuteSqlQuery:queryDetalleVenta];
+
+        
     }
     [appdelegate MessageBox:@"Se ha realizado su compra con exito." andTitle:@"Compra Exitosa"];
     [listaTabla removeAllObjects];
@@ -159,10 +182,13 @@
     }
 }
 
+
+
 /*NSTableViewController methods to handle datasource*/
 -(NSInteger) numberOfRowsInTableView:(NSTableView *)tableView{
     return   [listaTabla count];
 }
+
 -(id) tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row{
     Producto *producto = [listaTabla objectAtIndex:row];
     NSString *identifier = [tableColumn identifier];

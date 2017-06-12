@@ -9,24 +9,24 @@
 #import "AppDelegate.h"
 #import "AlimentadorInventarioVC.h"
 @interface AppDelegate ()
+
 @end
+
 @implementation AppDelegate
 
+//este siguiente codigo disque es para tener la variable global.
+@synthesize EmpleadoSesionActivo;
 
-@synthesize EmpleadoRol;
 static AppDelegate *instance = nil;
-
-+(AppDelegate *)getInstance
-{
-    @synchronized(self)
-    {
-        if(instance==nil)
-        {
++(AppDelegate *)getInstance{
+    @synchronized(self){
+        if(instance==nil){
             instance= [AppDelegate new];
         }
     }
     return instance;
 }
+
 
 -(id) init{
     //Ruta para la base de datos, estara en la library que es privada, ya que Documents se comparte con el usuario mediante Itunes
@@ -79,6 +79,7 @@ static AppDelegate *instance = nil;
         NSAssert1(0,@"Error al cargar la base de datos, error = '%@'. ", [error localizedDescription]);
     }
 }
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     }

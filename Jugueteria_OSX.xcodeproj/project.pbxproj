@@ -16,6 +16,10 @@
 		188901241EEBCE9100D194E5 /* ManejadorSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 188901231EEBCE9100D194E5 /* ManejadorSQLite.m */; };
 		189E96241EE780CF003E85C0 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E96231EE780CF003E85C0 /* LoginVC.m */; };
 		189E962E1EE785EA003E85C0 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E962D1EE785EA003E85C0 /* TabViewController.m */; };
+		18B249AF1EEEBCF9007EAF5E /* Empleado.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249AE1EEEBCF9007EAF5E /* Empleado.m */; };
+		18B249B41EEEBE0B007EAF5E /* Venta.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249B31EEEBE0B007EAF5E /* Venta.m */; };
+		18B249B71EEEC299007EAF5E /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249B61EEEC299007EAF5E /* Persona.m */; };
+		18B249BC1EEEC701007EAF5E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249BB1EEEC701007EAF5E /* Response.m */; };
 		18C8CF4C1EEAF85300A9C1CD /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8CF4B1EEAF85300A9C1CD /* Window.m */; };
 		18E942AD1EE9BF6F00C1A910 /* InventarioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E942AC1EE9BF6F00C1A910 /* InventarioVC.m */; };
 		18EF9B951E947521004D66C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9B941E947521004D66C9 /* AppDelegate.m */; };
@@ -42,6 +46,14 @@
 		189E96231EE780CF003E85C0 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		189E962C1EE785EA003E85C0 /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
 		189E962D1EE785EA003E85C0 /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		18B249AD1EEEBCF9007EAF5E /* Empleado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Empleado.h; sourceTree = "<group>"; };
+		18B249AE1EEEBCF9007EAF5E /* Empleado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Empleado.m; sourceTree = "<group>"; };
+		18B249B21EEEBE0B007EAF5E /* Venta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venta.h; sourceTree = "<group>"; };
+		18B249B31EEEBE0B007EAF5E /* Venta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venta.m; sourceTree = "<group>"; };
+		18B249B51EEEC299007EAF5E /* Persona.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persona.h; sourceTree = "<group>"; };
+		18B249B61EEEC299007EAF5E /* Persona.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persona.m; sourceTree = "<group>"; };
+		18B249BA1EEEC701007EAF5E /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
+		18B249BB1EEEC701007EAF5E /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
 		18C8CF4A1EEAF85300A9C1CD /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
 		18C8CF4B1EEAF85300A9C1CD /* Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Window.m; sourceTree = "<group>"; };
 		18E942A21EE9A08700C1A910 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -125,7 +137,11 @@
 		189E96281EE78115003E85C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18B249B91EEEC6EC007EAF5E /* Response */,
+				18B249B11EEEBDFC007EAF5E /* Venta */,
+				18B249B01EEEBDED007EAF5E /* Empleado */,
 				18EF9BA71E947A75004D66C9 /* Producto */,
+				18B249B81EEEC29D007EAF5E /* Persona */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -137,6 +153,42 @@
 				189E962D1EE785EA003E85C0 /* TabViewController.m */,
 			);
 			name = TabView;
+			sourceTree = "<group>";
+		};
+		18B249B01EEEBDED007EAF5E /* Empleado */ = {
+			isa = PBXGroup;
+			children = (
+				18B249AD1EEEBCF9007EAF5E /* Empleado.h */,
+				18B249AE1EEEBCF9007EAF5E /* Empleado.m */,
+			);
+			name = Empleado;
+			sourceTree = "<group>";
+		};
+		18B249B11EEEBDFC007EAF5E /* Venta */ = {
+			isa = PBXGroup;
+			children = (
+				18B249B21EEEBE0B007EAF5E /* Venta.h */,
+				18B249B31EEEBE0B007EAF5E /* Venta.m */,
+			);
+			name = Venta;
+			sourceTree = "<group>";
+		};
+		18B249B81EEEC29D007EAF5E /* Persona */ = {
+			isa = PBXGroup;
+			children = (
+				18B249B51EEEC299007EAF5E /* Persona.h */,
+				18B249B61EEEC299007EAF5E /* Persona.m */,
+			);
+			name = Persona;
+			sourceTree = "<group>";
+		};
+		18B249B91EEEC6EC007EAF5E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				18B249BA1EEEC701007EAF5E /* Response.h */,
+				18B249BB1EEEC701007EAF5E /* Response.m */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 		18C8CF501EEB034900A9C1CD /* Window */ = {
@@ -305,15 +357,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B249AF1EEEBCF9007EAF5E /* Empleado.m in Sources */,
 				18E942AD1EE9BF6F00C1A910 /* InventarioVC.m in Sources */,
 				18EF9BAA1E947A84004D66C9 /* Producto.m in Sources */,
 				189E96241EE780CF003E85C0 /* LoginVC.m in Sources */,
+				18B249B71EEEC299007EAF5E /* Persona.m in Sources */,
 				18EF9B981E947521004D66C9 /* main.m in Sources */,
 				18607CE41EE9FFB10039C1A6 /* ReportesVC.m in Sources */,
 				188901241EEBCE9100D194E5 /* ManejadorSQLite.m in Sources */,
 				182E6DD81E968A03007D4317 /* AlimentadorInventarioVC.m in Sources */,
 				18C8CF4C1EEAF85300A9C1CD /* Window.m in Sources */,
+				18B249B41EEEBE0B007EAF5E /* Venta.m in Sources */,
 				189E962E1EE785EA003E85C0 /* TabViewController.m in Sources */,
+				18B249BC1EEEC701007EAF5E /* Response.m in Sources */,
 				185DB1A21EEDD055004A575C /* VentaVC.m in Sources */,
 				18EF9B951E947521004D66C9 /* AppDelegate.m in Sources */,
 			);

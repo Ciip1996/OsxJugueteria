@@ -1430,7 +1430,7 @@ EFRvdGFsOg
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="Edv-HO-31J"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="lblTotal" id="ehb-f4-pXa">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="ehb-f4-pXa">
                                     <font key="font" size="16" name="MyriadWebPro"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>

@@ -65,6 +65,7 @@
     sqlite3_close(database);
     return listaElementos;
 }
+
 -(Producto*)traerProducto:(int)Id{
     if (sqlite3_open([appdelegate.databasepath UTF8String], &database)==SQLITE_OK)
     {
@@ -100,6 +101,7 @@
     sqlite3_close(database);
     return producto;
 }
+
 -(BOOL)ExecuteSqlQuery:(NSString *)query{
     BOOL response = NO;
     //abrimos la base de datos de la ruta indicada en el delegate
@@ -131,11 +133,33 @@
     return response;
 }
 
--(NSString*)Login:(NSString*)usuario yContraseña:(NSString*)contraseña{
+
+-(Response*)Login:(NSString*)usuario yContraseña:(NSString*)contraseña{
+    Response *resp = [[Response alloc] init];
+    if (sqlite3_open([appdelegate.databasepath UTF8String], &database)==SQLITE_OK)
+    {
+        NSString *sqlStatement  = [NSString stringWithFormat:@"SELECT E.Rol, E.IdEmpleado, E.IdPersona, E.Codigo, E.FechaIngreso, E.Salario FROM Usuario AS U INNER JOIN Empleado AS E ON  U.IdEmpleado = E.IdEmpleado WHERE U.Usuario = '%@' AND U.Contrasenia = '%@'",usuario,  contraseña];
+        if (sqlite3_prepare_v2(database, [sqlStatement UTF8String], -1, &CompiledStatement, NULL)==SQLITE_OK){
+            if (sqlite3_step(CompiledStatement)==SQLITE_ROW){
+                [resp setStringResponseMessage:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 0)]];
+                [resp setEmpleado:[[Empleado alloc] initWithRol:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 0)] yUsuario:usuario yContraseña: contraseña]];
+            }
+        }
+        else{
+            [resp setStringResponseMessage:@"Usuario o contraseña invalidos"];
+        }
+        sqlite3_finalize(CompiledStatement);
+    }
+    //cierro la base de datos
+    sqlite3_close(database);
+    return resp;
+}
+
+-(NSObject*)traerEmpleado:(NSString *)usuario yContraseña:(NSString *)contraseña{
     NSString *resp = [[NSString alloc] init];
     if (sqlite3_open([appdelegate.databasepath UTF8String], &database)==SQLITE_OK)
     {
-        NSString *sqlStatement  = [NSString stringWithFormat:@"SELECT  E.Rol FROM Usuario AS U INNER JOIN Empleado AS E ON  U.IdEmpleado = E.IdEmpleado WHERE U.Usuario = '%@' AND U.Contrasenia = '%@'",usuario,  contraseña];
+        NSString *sqlStatement  = [NSString stringWithFormat:@"SELECT E.IdEmpleado, E.IdPersona, E.Salario, E.Codigo, E.FechaIngreso, E.Rol FROM Usuario AS U INNER JOIN Empleado AS E ON  U.IdEmpleado = E.IdEmpleado WHERE U.Usuario = '%@' AND U.Contrasenia = '%@'",usuario,  contraseña];
         if (sqlite3_prepare_v2(database, [sqlStatement UTF8String], -1, &CompiledStatement, NULL)==SQLITE_OK)
         {
             while (sqlite3_step(CompiledStatement)==SQLITE_ROW)
@@ -145,7 +169,7 @@
         }
         else
         {
-                resp = @"Usuario o contraseña invalidos";
+            resp = @"Usuario o contraseña invalidos";
         }
         sqlite3_finalize(CompiledStatement);
     }
@@ -153,5 +177,8 @@
     sqlite3_close(database);
     return resp;
 }
+
+
+
 
 @end

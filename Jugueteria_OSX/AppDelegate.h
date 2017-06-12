@@ -7,12 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "Empleado.h"
 @interface AppDelegate : NSObject <NSApplicationDelegate>{
     NSWindow *ventana;
-    NSString *EmpleadoRol;
+    Empleado *EmpleadoSesionActivo;
 }
-@property(nonatomic,retain)NSString *EmpleadoRol;
+
+@property(nonatomic,retain)Empleado *EmpleadoSesionActivo;
 +(AppDelegate*)getInstance;
 
 @property (nonatomic,strong) NSString *databasename;
