@@ -42,26 +42,11 @@
     
     self.window.contentView.subviews = arreglo;
     self.window.backgroundColor = [NSColor colorWithSRGBRed:.98 green:.97 blue:.99 alpha:.85];//ajusta el color y transparencia de la barra toolbar y de titulo.
-
-    
-    
-    //self.window.styleMask = NSWindowStyleMaskTitled;//Oculta los botones de cerrar, minimizar y cerrar.
-    
-    //self.window.styleMask = NSWindowStyleMaskDocModalWindow;//oculta el toolbar y barra de titulo
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-    /*self.window.styleMask = NSWindowStyleMaskUnifiedTitleAndToolbar;   //(NSWindowStyleMask.unifiedTitleAndToolbar);
-    self.window.styleMask = NSWindowStyleMaskFullSizeContentView;
-    self.window.styleMask = NSWindowStyleMaskTitled;//  .insert(NSWindowStyleMask.titled);
-    self.window.toolbar.visible = YES;
-    self.window.titleVisibility = NSWindowTitleHidden;
-    self.window.titlebarAppearsTransparent = NO;*/
 }
 
 - (IBAction)clickReportes:(id)sender {
-    int x = 0;
 }
 
 - (IBAction)clickAdmin:(id)sender {
-    int x = 0;
 }
 @end

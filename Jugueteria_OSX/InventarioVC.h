@@ -24,6 +24,7 @@
 @property (nonatomic,retain) NSMutableArray *ListaProductos;
 @property (weak) IBOutlet NSTableView *TablaProductos;
 @property (weak) IBOutlet NSButton *btnAlimentarInventario;
+- (IBAction)OnClickAlimentarInventariobtn:(id)sender;
 
 - (IBAction)RefrescarTabla:(id)sender;
 -(void)MessageBox:(NSString *)Message andTitle:(NSString *)titulo;

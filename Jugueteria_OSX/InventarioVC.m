@@ -21,7 +21,6 @@
 -(id)init{
     return self;
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     //LLAMAR EL APPDELEGATE DE LA APLICACION
@@ -81,6 +80,22 @@
 /*
  Este metodo manda llamar una consulta a la base de datos local.
  */
+- (IBAction)OnClickAlimentarInventariobtn:(id)sender {
+    appdelegate = [AppDelegate getInstance];
+    Empleado *empleado = appdelegate.EmpleadoSesionActivo;
+    if([[empleado Rol] isEqualToString:@"Admin"] || [[empleado Rol] isEqualToString:@"Almacenista"]){
+        [_btnAlimentarInventario setEnabled:YES];
+        NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        AlimentadorInventarioVC *controller = (AlimentadorInventarioVC *)[storyboard instantiateControllerWithIdentifier:@"AlimentadorInventario"];
+        [self presentViewControllerAsModalWindow:controller];
+
+    }
+    else{
+        [_btnAlimentarInventario setEnabled:NO];
+        [appdelegate MessageBox:@"Debe haberse logeado como administrador o almacenista." andTitle:@"Permiso denegado"];
+    }
+}
+
 - (IBAction)RefrescarTabla:(id)sender {
     _ListaProductos = [[NSMutableArray alloc]init];
     //refresca la lista de productos de la bd

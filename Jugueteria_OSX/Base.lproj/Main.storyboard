@@ -1791,7 +1791,7 @@ EFRvdGFsOg
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <segue destination="mOW-h4-6gB" kind="modal" id="Tki-lq-vL5"/>
+                                    <action selector="OnClickAlimentarInventariobtn:" target="sVL-Gd-b2F" id="Sja-ss-BSZ"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uB3-8n-2NQ">
@@ -2178,7 +2178,7 @@ EFRvdGFsOg
         <!--Alimentador de Inventario-->
         <scene sceneID="ZtD-Dc-knR">
             <objects>
-                <viewController title="Alimentador de Inventario" id="mOW-h4-6gB" customClass="AlimentadorInventarioVC" sceneMemberID="viewController">
+                <viewController title="Alimentador de Inventario" storyboardIdentifier="AlimentadorInventario" id="mOW-h4-6gB" customClass="AlimentadorInventarioVC" sceneMemberID="viewController">
                     <view key="view" id="lan-XT-gEs">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="393"/>
                         <autoresizingMask key="autoresizingMask"/>

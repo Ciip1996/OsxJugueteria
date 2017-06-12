@@ -70,7 +70,7 @@
         nuevoProducto = [listaProductosBD objectAtIndex:i];
 
         //primero validamos que haya suficiente producto en la bd
-        Producto* pr = [msqlite traerProducto:i+1];
+        Producto* pr = [msqlite traerProducto:(i+1)];
         if([pr getCantidad] > [_txtCantidadDeProductos intValue])
         {
             //Ahorabuscar si ya existe el producto en la tabla.
