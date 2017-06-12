@@ -1609,7 +1609,7 @@ EFRvdGFsOg
         <!--iToy System-->
         <scene sceneID="uw5-5a-tTZ">
             <objects>
-                <tabViewController title="iToy System" storyboardIdentifier="Principal" selectedTabViewItemIndex="0" canPropagateSelectedChildViewControllerTitle="NO" id="Ibp-TK-YjZ" customClass="TabViewController" sceneMemberID="viewController">
+                <tabViewController title="iToy System" storyboardIdentifier="Principal" selectedTabViewItemIndex="1" canPropagateSelectedChildViewControllerTitle="NO" id="Ibp-TK-YjZ" customClass="TabViewController" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="ajs-9W-MHb"/>
                         <tabViewItem id="szp-2W-g5A"/>

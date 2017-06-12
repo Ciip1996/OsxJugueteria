@@ -17,7 +17,6 @@
 
 -(void)viewWillAppear{
     [self ShowLogin:nil];
-
     NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     NSWindowController *controller = (NSWindowController *)[storyboard instantiateControllerWithIdentifier:@"windowController"];
     controller.window.titlebarAppearsTransparent = YES;
@@ -36,5 +35,4 @@
     //LoginVC *login = [[LoginVC alloc] init];
     [self presentViewControllerAsSheet:controller];
 }
-
 @end

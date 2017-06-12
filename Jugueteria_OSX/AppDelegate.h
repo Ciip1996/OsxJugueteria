@@ -15,13 +15,13 @@
 
 @property(nonatomic,retain)Empleado *EmpleadoSesionActivo;
 +(AppDelegate*)getInstance;
-
 @property (nonatomic,strong) NSString *databasename;
 @property (nonatomic,strong) NSString *databasepath;
 -(void) loadDB;
 -(void) replicarBD;
 -(id) init;
 -(void)MessageBox:(NSString *)Message andTitle:(NSString *)titulo;
+
 
 @end
 

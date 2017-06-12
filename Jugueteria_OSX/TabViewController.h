@@ -10,7 +10,6 @@
 
 @interface TabViewController : NSTabViewController
 
-
 -(void)viewWillAppear;
 -(IBAction)ShowLogin:(id)sender;
 @end

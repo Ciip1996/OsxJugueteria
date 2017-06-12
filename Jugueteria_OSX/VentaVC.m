@@ -114,39 +114,42 @@
   }
 
 - (IBAction)OnRealizarCompra:(id)sender {
-    //obtengo datos de venta:
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];// or @"yyyy-MM-dd hh:mm:ss a" if you prefer the time with AM/PM
-    NSString *fechaVenta = [dateFormatter stringFromDate:[NSDate date]];
-    appdelegate = [AppDelegate getInstance];
-    Empleado *e = appdelegate.EmpleadoSesionActivo;
-
-    //Creo query para insertar Venta:
-    NSString *queryVenta = [NSString stringWithFormat:@"INSERT INTO Venta (IdEmpleado, FechaVenta, FormaPago, Estatus) VALUES (%d, '%@', '%@', %d);",[e IdEmpleado],fechaVenta,@"Efectivo",1];
-    [msqlite ExecuteSqlQuery:queryVenta];
-
-    //Actualizar Inventario con updates y hago inserts de mis detalles de venta.
-    for (id producto in listaTabla)
-    {
-        msqlite = [[ManejadorSQLite alloc]init];
-        //obtener la cantidad anterior de bd y restarle la cantidad que estoy comprando
-        NSArray *tablabd =[msqlite traerProductos];
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"idProducto == %d", [producto getIdProducto]];
-        NSArray *TablaFiltrada = [tablabd filteredArrayUsingPredicate:predicate];
-        int cantidadAnteriorBD = [[TablaFiltrada firstObject] getCantidad];
-        int cantidadArestar = [producto getCantidad];
-        int cantidadNueva = cantidadAnteriorBD - cantidadArestar;
-        NSString *query = [NSString stringWithFormat: @"UPDATE Producto SET cantidad = %d WHERE idProducto = %d;",cantidadNueva,[producto getIdProducto]];
-        [msqlite ExecuteSqlQuery:query];
+    if([self validarSesion]){
         
-        //ahora inserto mi DetalleVenta
-        msqlite = [[ManejadorSQLite alloc]init];
-        NSString *queryDetalleVenta = [NSString stringWithFormat:@"INSERT INTO DetalleVenta (IdVenta, IdProducto, Cantidad) VALUES  ((SELECT IdVenta FROM Venta  ORDER BY IdVenta DESC limit 1), %d, %d);",[producto IdProducto],[producto Cantidad]];
-        [msqlite ExecuteSqlQuery:queryDetalleVenta];
+        //obtengo datos de venta:
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];// or @"yyyy-MM-dd hh:mm:ss a" if you prefer the time with AM/PM
+        NSString *fechaVenta = [dateFormatter stringFromDate:[NSDate date]];
+        appdelegate = [AppDelegate getInstance];
+        Empleado *e = appdelegate.EmpleadoSesionActivo;
+        
+        //Creo query para insertar Venta:
+        NSString *queryVenta = [NSString stringWithFormat:@"INSERT INTO Venta (IdEmpleado, FechaVenta, FormaPago, Estatus) VALUES (%d, '%@', '%@', %d);",[e IdEmpleado],fechaVenta,@"Efectivo",1];
+        [msqlite ExecuteSqlQuery:queryVenta];
+        
+        //Actualizar Inventario con updates y hago inserts de mis detalles de venta.
+        for (id producto in listaTabla)
+        {
+            msqlite = [[ManejadorSQLite alloc]init];
+            //obtener la cantidad anterior de bd y restarle la cantidad que estoy comprando
+            NSArray *tablabd =[msqlite traerProductos];
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"idProducto == %d", [producto getIdProducto]];
+            NSArray *TablaFiltrada = [tablabd filteredArrayUsingPredicate:predicate];
+            int cantidadAnteriorBD = [[TablaFiltrada firstObject] getCantidad];
+            int cantidadArestar = [producto getCantidad];
+            int cantidadNueva = cantidadAnteriorBD - cantidadArestar;
+            NSString *query = [NSString stringWithFormat: @"UPDATE Producto SET cantidad = %d WHERE idProducto = %d;",cantidadNueva,[producto getIdProducto]];
+            [msqlite ExecuteSqlQuery:query];
+            
+            //ahora inserto mi DetalleVenta
+            msqlite = [[ManejadorSQLite alloc]init];
+            NSString *queryDetalleVenta = [NSString stringWithFormat:@"INSERT INTO DetalleVenta (IdVenta, IdProducto, Cantidad) VALUES  ((SELECT IdVenta FROM Venta  ORDER BY IdVenta DESC limit 1), %d, %d);",[producto IdProducto],[producto Cantidad]];
+            [msqlite ExecuteSqlQuery:queryDetalleVenta];
+        }
+        [appdelegate MessageBox:@"Se ha realizado su compra con exito." andTitle:@"Compra Exitosa"];
+        [listaTabla removeAllObjects];
+        [_TablaCarritoCompras reloadData];
     }
-    [appdelegate MessageBox:@"Se ha realizado su compra con exito." andTitle:@"Compra Exitosa"];
-    [listaTabla removeAllObjects];
-    [_TablaCarritoCompras reloadData];
 }
 
 - (IBAction)EliminarProductoCarrito:(id)sender {
@@ -175,6 +178,21 @@
     }
 }
 
+
+-(BOOL)validarSesion{
+    BOOL res = NO;
+    //validar que el usuario tenga permisos sino regresar al otro tab
+    appdelegate = [AppDelegate getInstance];
+    Empleado *empleado = appdelegate.EmpleadoSesionActivo;
+    if([[empleado Rol] isEqualToString:@"Admin"] || [[empleado Rol] isEqualToString:@"Vendedor"]){
+        res = YES;
+    }
+    else{
+        [appdelegate MessageBox:@"Debe haberse logeado como administrador o almacenista." andTitle:@"Permiso denegado"];
+        res = NO;
+    }
+    return res;
+}
 
 
 /*NSTableViewController methods to handle datasource*/

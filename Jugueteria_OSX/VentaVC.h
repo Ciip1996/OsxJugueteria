@@ -42,4 +42,6 @@
 - (IBAction)OnRealizarCompra:(id)sender;
 - (IBAction)EliminarProductoCarrito:(id)sender;
 
+
+-(BOOL)validarSesion;
 @end

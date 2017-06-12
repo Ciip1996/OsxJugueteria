@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AlimentadorInventarioVC.h"
+#import "TabViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -26,7 +27,6 @@ static AppDelegate *instance = nil;
     }
     return instance;
 }
-
 
 -(id) init{
     //Ruta para la base de datos, estara en la library que es privada, ya que Documents se comparte con el usuario mediante Itunes
