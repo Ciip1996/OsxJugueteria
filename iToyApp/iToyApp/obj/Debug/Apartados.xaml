@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="iToyApp.Apartados"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:iToyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF071C53" Offset="0"/>
+                <GradientStop Color="#FF1C7E75" Offset="1"/>
+                <GradientStop Color="#FF094556" Offset="0.341"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListView x:Name="lstAp" HorizontalAlignment="Left" Height="331" Margin="9,103,0,0" VerticalAlignment="Top" Width="391">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="txtCantidad1" Text="{Binding Nombre}" FontSize="20" FontWeight="Bold"/>
+                            <TextBlock x:Name="txt1" Text="        $" FontSize="20"/>
+                            <TextBlock x:Name="txt2" Text="{Binding Precio}" FontSize="20"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="txt" Text="Cantidad      " FontSize="20"/>
+                            <TextBlock x:Name="txtCanti" Text="{Binding Cantidad}" FontSize="20"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="txt4" Text="Total      " FontSize="20"/>
+                            <TextBlock x:Name="txt5" Text="{Binding Total}" FontSize="20"/>
+                        </StackPanel>
+                        <TextBlock x:Name="txtCanad1" Text="{Binding Fecha}" FontSize="20"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:ConnectionId='1' x:Name="btnRegresar" Content="Regresar" HorizontalAlignment="Left" Margin="148,459,0,0" VerticalAlignment="Top"                          />
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,28,0,0" TextWrapping="Wrap" Text="Apartados" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="36" Width="390" TextAlignment="Center"/>
+    </Grid>
+</Page>
+

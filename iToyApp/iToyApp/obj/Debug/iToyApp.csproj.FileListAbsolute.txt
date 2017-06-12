@@ -1,0 +1,13 @@
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\iToyApp.csprojResolveAssemblyReference.cache
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\App.g.i.cs
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\App.g.cs
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\Apartados.g.i.cs
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\Apartados.g.cs
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\Catalogo.g.i.cs
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\Catalogo.g.cs
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\MainPage.g.i.cs
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\MainPage.g.cs
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\App.xaml
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\App.xbf
+C:\Users\Moni\Desktop\WINDOWS MOVIL\iToyApp\iToyApp\obj\Debug\XamlSaveStateFile.xml

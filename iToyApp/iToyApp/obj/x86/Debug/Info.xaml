@@ -1,0 +1,38 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:iToyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="iToyApp.Info"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        
+        
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/galle.jpg" Stretch="Fill"/>
+        </Grid.Background>
+        
+        <Rectangle Fill="#CC1F699C" HorizontalAlignment="Left" Height="48"  VerticalAlignment="Top" Width="400" />
+        <Maps:MapControl x:Name="map" HorizontalAlignment="Left" Margin="18,209,0,0" VerticalAlignment="Top" Height="258" Width="368"/>
+        <Slider x:ConnectionId='1' x:Name="slider1" HorizontalAlignment="Left" Margin="55,555,0,0" VerticalAlignment="Top" Width="289" Maximum="20" Minimum="10"                                    />
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="24,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="352" FontFamily="Century Gothic" FontSize="24" TextAlignment="Center" Foreground="#FF1B3C46" FontWeight="Bold">
+            <Run Text="Gasca Falcón Mónica G."/>
+            <LineBreak/>
+            <Run Text="Ibarra Pacheco Carlos Iván"/>
+            <LineBreak/>
+            <Run Text="Villalpando Ramírez Christian"/>
+            <LineBreak/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="80,2,0,0" TextWrapping="Wrap" Text="Contactanos" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="36"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="56" Margin="4,49,0,0" VerticalAlignment="Top" Width="63" Source="Assets/face.png"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="51" Margin="183,51,0,0" VerticalAlignment="Top" Width="68" Source="Assets/whats.png"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="61,63,0,0" TextWrapping="Wrap" Text="#OnToy!" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24" Foreground="#FF0B4455"/>
+        <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Margin="242,65,0,0" TextWrapping="Wrap" Text="4772662269" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24" Foreground="#FF0B4455"/>
+        <AppBarButton x:ConnectionId='2' x:Name="appBarButton" HorizontalAlignment="Left" Icon="Home"  VerticalAlignment="Top" Margin="0,-8,0,0"                           />
+    </Grid>
+</Page>
+

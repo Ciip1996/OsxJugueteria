@@ -1,0 +1,7 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\moni\desktop\windows movil\itoyapp\itoyapp\obj\x86\debug\intermediatexaml\itoyapp.exe" HashGuid="43f0951b-243c-cb1b-617b-ab043617878f" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="c:\users\moni\desktop\windows movil\itoyapp\packages\newtonsoft.json.10.0.2\lib\portable-net45+win8+wpa81+wp8\newtonsoft.json.dll" HashGuid="dc6b12dd-6e29-692e-3aab-9db010480a7e" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

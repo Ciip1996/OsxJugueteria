@@ -1,0 +1,150 @@
+﻿<Page
+    x:Class="iToyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:iToyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF125A97" Offset="0"/>
+                <GradientStop Color="#FF082E5D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="63*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <AppBarButton x:Name="btnLog" HorizontalAlignment="Right" Icon="Mail" Label="Notas" VerticalAlignment="Top" Grid.RowSpan="2" Grid.ColumnSpan="3" Margin="-5,-0.167,25,-7" Grid.Row="16" Foreground="#FF212ADE" BorderBrush="#FF212ADE" Background="#FF212ADE">
+            <AppBarButton.Flyout>
+                <Flyout x:Name="fly">
+                    <StackPanel>
+                        <TextBox x:Name="txtTitulo" PlaceholderText="Titulo"/>
+                        <TextBox x:Name="txtContenido" PlaceholderText="Contenido" Height="90"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Click="btnGuardar_Click" />
+                            <Button x:Name="btnLeer" Content="Leer" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Click="btnLeer_Click" />
+                        </StackPanel>
+                        <TextBox x:Name="txtLista" Text="Notas: " FontFamily="Century Gothic" FontSize="16" Height="204" />
+                        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Click="btnCancelar_Click" />
+                    </StackPanel>
+                </Flyout>
+            </AppBarButton.Flyout>
+        </AppBarButton>
+
+        <Rectangle Grid.Row="6" Fill="#FF4EDA19" Grid.Column="1" />
+        <Rectangle Grid.Row="7" Fill="#FF28F114" Grid.Column="1" />
+
+        <Rectangle Grid.Row="5" Fill="#FFFDA320" Grid.Column="2" />
+        <Rectangle Grid.Row="5" Fill="#FFF39408" Grid.Column="3" />
+        <Rectangle Grid.Row="5" Fill="#FFE48E10" Grid.Column="4" />
+        <Rectangle Grid.Row="6" Fill="#FFE88D08" Grid.Column="3" />
+        <Rectangle Grid.Row="7" Fill="#FFF5960C" Grid.Column="3"  />
+
+        <Rectangle Grid.Row="6" Fill="#FFDEF308" Grid.Column="5" />
+        <Rectangle Grid.Row="7" Fill="#FFBBCD0B" Grid.Column="5" />
+        <Rectangle Grid.Row="6" Fill="#FFD4E80B" Grid.Column="6" />
+        <Rectangle Grid.Row="7" Fill="#FFC2D409" Grid.Column="6" />
+
+        <Rectangle Grid.Row="5" Fill="#FF08DABE" Grid.Column="7" />
+        <Rectangle Grid.Row="6" Fill="#FF0FF3D4" Grid.Column="7" />
+        <Rectangle Grid.Row="6" Fill="#FF06E8C9" Grid.Column="8" />
+        <Rectangle Grid.Row="7" Fill="#FF06C7AD" Grid.Column="8" />
+        <Rectangle Grid.Row="6" Fill="#FF05D8BC" Grid.Column="9" />
+        <Rectangle Grid.Row="5" Fill="#FF06D4B9" Grid.Column="9" />
+        <Rectangle Grid.Row="9" Fill="#FF5BD1C1" Grid.Column="8" />
+        <Rectangle Grid.Row="8" Fill="#FF7AE2D4" Grid.Column="8" />
+        <Rectangle Grid.Row="9" Fill="#FF20D1B9" Grid.Column="7" />
+        <Rectangle Grid.Row="9" Fill="#FF43DCC7" Grid.Column="6" />
+        <Rectangle Grid.Row="9" Fill="#FF2CC7B2" Grid.Column="5" />
+        <Rectangle Grid.Row="9" Fill="#FF27CFB8" Grid.Column="4" />
+        <Rectangle Grid.Row="9" Fill="#FF1DCFB7" Grid.Column="3" />
+        <Rectangle Grid.Row="9" Fill="#FF0CC1A8" Grid.Column="2" />
+        <Rectangle Grid.Row="9" Fill="#FF0FDABF" Grid.Column="1" />
+
+        <Rectangle Grid.Row="15" Fill="#FF1B990F" Grid.Column="9" />
+        <Rectangle Grid.Row="15" Fill="#FF1B990F" Grid.Column="6" />
+        <Rectangle Grid.Row="15" Fill="#FF1B990F" Grid.Column="3" />
+        <Rectangle Grid.Row="14" Fill="#FF1CAE0E" Grid.Column="1" />
+        <Rectangle Grid.Row="14" Fill="#FF1EA211" Grid.Column="2" />
+        <Rectangle Grid.Row="14" Fill="#FF26B018" Grid.Column="3" />
+        <Rectangle Grid.Row="14" Fill="#FF3AB62E" Grid.Column="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="33,0,0,0" Width="33" />
+        <Rectangle Grid.Row="14" Fill="#FF23A816" Grid.Column="5" />
+        <Rectangle Grid.Row="14" Fill="#FF45993D" Grid.Column="6" />
+        <Rectangle Grid.Row="14" Fill="#FF39AE2D" Grid.Column="7" />
+        <Rectangle Grid.Row="14" Fill="#FF43A23A" Grid.Column="8" />
+        <Rectangle Grid.Row="14" Fill="#FF39B02E" Grid.Column="9" />
+        <Rectangle Grid.Row="14" Fill="#FF1DA011" Grid.Column="10" />
+        <Rectangle Grid.Row="13" Fill="#FF3FE22F" Grid.Column="1" />
+        <Rectangle Grid.Row="13" Fill="#FF35E824" Grid.Column="2" />
+        <Rectangle Grid.Row="13" Fill="#FF2ADA19" Grid.Column="3" />
+        <Rectangle Grid.Row="13" Fill="#FF2ADA19" Grid.Column="4" />
+        <Rectangle Grid.Row="12" Fill="#FF42E832" Grid.Column="5" />
+        <Rectangle Grid.Row="11" Fill="#FF44E834" Grid.Column="5" />
+        <Rectangle Grid.Row="11" Fill="#FF41D632" Grid.Column="6" />
+        <Rectangle Grid.Row="11" Fill="#FF46E836" Grid.Column="7" />
+        <Rectangle Grid.Row="13" Fill="#FF46DC38" Grid.Column="5" />
+        <Rectangle Grid.Row="13" Fill="#FF4DEC3D" Grid.Column="6" />
+        <Rectangle Grid.Row="13" Fill="#FF2ADA19" Grid.Column="7" />
+        <Rectangle Grid.Row="13" Fill="#FF4DE83E" Grid.Column="8" />
+        <Rectangle Grid.Row="13" Fill="#FF2ADA19" Grid.Column="9" />
+        <Rectangle Grid.Row="13" Fill="#FF2ADA19" Grid.Column="10" />
+        <Rectangle Grid.Row="12" Fill="#FF2ADA19" Grid.Column="9" />
+        <Rectangle Grid.Row="12" Fill="#FF2ADA19" Grid.Column="7" />
+        <Rectangle Grid.Row="12" Fill="#FF34CB25" Grid.Column="6" />
+
+        <Button x:Name="btnCatalogo" Grid.Column="2" Grid.ColumnSpan="4"  Content="Catalogo" FontFamily="Century Gothic" FontSize="22" FontWeight="Normal" Click="btnCatalogo_Click" BorderThickness="3" Background="#FF110AA0" Height="70"  Grid.RowSpan="3">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,0">
+                    <GradientStop Color="#FF24CFB7" Offset="0"/>
+                    <GradientStop Color="#FF7987E0" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnApartados" Grid.Column="2" Grid.RowSpan="7" Grid.ColumnSpan="5" Height="70" Content="Apartados" FontFamily="Century Gothic" FontSize="22" FontWeight="Normal" Click="btnApartados_Click" Background="#FF110AA0">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF4C7DAE" Offset="0"/>
+                    <GradientStop Color="#FF24CFB7" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <AppBarButton x:Name="btnInfo" Grid.ColumnSpan="2" Grid.Column="10" HorizontalAlignment="Left" Icon="Map" Grid.Row="16" VerticalAlignment="Top" Height="60" Grid.RowSpan="2" Click="btnInfo_Click"/>
+        <AppBarButton x:Name="btnfile" HorizontalAlignment="Left" Icon="Mail" Label="Notas" Margin="28,-1,-9,-0.333" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="73" Grid.RowSpan="2" Width="81" RenderTransformOrigin="0.249,-0.731" Click="btnfile_Click" Grid.Column="9"/>
+    </Grid>
+</Page>
