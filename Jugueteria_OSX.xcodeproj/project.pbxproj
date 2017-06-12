@@ -103,7 +103,7 @@
 			name = Reportes;
 			sourceTree = "<group>";
 		};
-		189E96251EE780D8003E85C0 /* ViewControllers */ = {
+		189E96251EE780D8003E85C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				189E96261EE780E3003E85C0 /* Login */,
@@ -113,7 +113,7 @@
 				189E96271EE780F3003E85C0 /* Alimentador Inventario */,
 				185DB1A31EEDD058004A575C /* Venta */,
 			);
-			name = ViewControllers;
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		189E96261EE780E3003E85C0 /* Login */ = {
@@ -230,7 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				189E96281EE78115003E85C0 /* Model */,
-				189E96251EE780D8003E85C0 /* ViewControllers */,
+				189E96251EE780D8003E85C0 /* ViewModel */,
 				18EF9BAE1E947DE5004D66C9 /* SQLite */,
 				18EF9B931E947521004D66C9 /* AppDelegate.h */,
 				18EF9B941E947521004D66C9 /* AppDelegate.m */,

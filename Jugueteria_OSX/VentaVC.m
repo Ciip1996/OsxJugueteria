@@ -118,19 +118,14 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];// or @"yyyy-MM-dd hh:mm:ss a" if you prefer the time with AM/PM
     NSString *fechaVenta = [dateFormatter stringFromDate:[NSDate date]];
-    
+    appdelegate = [AppDelegate getInstance];
+    Empleado *e = appdelegate.EmpleadoSesionActivo;
+
     //Creo query para insertar Venta:
-    NSString *queryVenta = [NSString stringWithFormat:@"INSERT INTO Venta (IdEmpleado, FechaVenta, FormaPago, Estatus) VALUES (%d, '%@', '%@', %d);",1,fechaVenta,@"Efectivo",1];
+    NSString *queryVenta = [NSString stringWithFormat:@"INSERT INTO Venta (IdEmpleado, FechaVenta, FormaPago, Estatus) VALUES (%d, '%@', '%@', %d);",[e IdEmpleado],fechaVenta,@"Efectivo",1];
     [msqlite ExecuteSqlQuery:queryVenta];
 
-    
-    
-    
-    
-    
-    
-    
-    //Actualizar Inventario:
+    //Actualizar Inventario con updates y hago inserts de mis detalles de venta.
     for (id producto in listaTabla)
     {
         msqlite = [[ManejadorSQLite alloc]init];
@@ -139,17 +134,15 @@
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"idProducto == %d", [producto getIdProducto]];
         NSArray *TablaFiltrada = [tablabd filteredArrayUsingPredicate:predicate];
         int cantidadAnteriorBD = [[TablaFiltrada firstObject] getCantidad];
-        
         int cantidadArestar = [producto getCantidad];
         int cantidadNueva = cantidadAnteriorBD - cantidadArestar;
         NSString *query = [NSString stringWithFormat: @"UPDATE Producto SET cantidad = %d WHERE idProducto = %d;",cantidadNueva,[producto getIdProducto]];
         [msqlite ExecuteSqlQuery:query];
         
-        NSString *queryDetalleVenta = [NSString stringWithFormat:@"INSERT INTO DetalleVenta (IdVenta, IdProducto, Cantidad) VALUES (%d, %@, %@,  %d);",1,fechaVenta,@"Efectivo",1];
-
+        //ahora inserto mi DetalleVenta
+        msqlite = [[ManejadorSQLite alloc]init];
+        NSString *queryDetalleVenta = [NSString stringWithFormat:@"INSERT INTO DetalleVenta (IdVenta, IdProducto, Cantidad) VALUES  ((SELECT IdVenta FROM Venta  ORDER BY IdVenta DESC limit 1), %d, %d);",[producto IdProducto],[producto Cantidad]];
         [msqlite ExecuteSqlQuery:queryDetalleVenta];
-
-        
     }
     [appdelegate MessageBox:@"Se ha realizado su compra con exito." andTitle:@"Compra Exitosa"];
     [listaTabla removeAllObjects];

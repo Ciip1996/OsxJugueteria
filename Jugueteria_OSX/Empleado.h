@@ -15,13 +15,13 @@
 @property int IdEmpleado;
 @property int IdPersona;
 @property double Salario;
-@property NSString *Código;
+@property NSString *Codigo;
 @property NSString *FechaIngreso;
 @property NSString *Rol;
 
 //propiedades de tabla usuario:
 @property NSString *Usuario;
-@property NSString *Contraseña;
+@property NSString *Contrasenia;
 
 //propiedades de tabla persona:
 

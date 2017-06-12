@@ -142,11 +142,17 @@
         if (sqlite3_prepare_v2(database, [sqlStatement UTF8String], -1, &CompiledStatement, NULL)==SQLITE_OK){
             if (sqlite3_step(CompiledStatement)==SQLITE_ROW){
                 [resp setStringResponseMessage:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 0)]];
-                [resp setEmpleado:[[Empleado alloc] initWithRol:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 0)] yUsuario:usuario yContraseña: contraseña]];
+                Empleado *empleado = [[Empleado alloc]initWithRol:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 0)] yUsuario:usuario yContraseña:contraseña];
+                [empleado setIdEmpleado:(int)sqlite3_column_int(CompiledStatement, 1)];
+                [empleado setIdPersona:(int)sqlite3_column_int(CompiledStatement, 2)];
+                [empleado setCodigo:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 3)]];
+                [empleado setFechaIngreso:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 4)]];
+                [empleado setSalario:(double)sqlite3_column_double(CompiledStatement,5)];
+                [resp setEmpleado:empleado];
             }
         }
         else{
-            [resp setStringResponseMessage:@"Usuario o contraseña invalidos"];
+            [resp setStringResponseMessage:@"ERROR"];
         }
         sqlite3_finalize(CompiledStatement);
     }

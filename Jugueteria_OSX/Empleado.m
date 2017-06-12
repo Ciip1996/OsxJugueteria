@@ -14,12 +14,13 @@
 @synthesize IdPersona = IdPersona;
 @synthesize Rol = Rol;
 @synthesize Usuario = Usuario;
-@synthesize Contraseña = Contraseña;
+@synthesize Contrasenia = Contrasenia;
+@synthesize Codigo = Codigo;
 
 -(id)initWithRol:(NSString*)rol yUsuario:(NSString*)usuario yContraseña:(NSString*)contraseña{
     self.Rol = rol;
     self.Usuario = usuario;
-    self.Contraseña = contraseña;
+    self.Contrasenia = contraseña;
     return self;
 }
 

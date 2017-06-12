@@ -32,7 +32,7 @@
     NSString *contrasenia = [[NSString alloc] initWithString:[_txtContraseña stringValue]];
     //acceso a datos para comprobar contraseña y usuario
     Response *response = [msqlite Login:usuario yContraseña:contrasenia];
-    if (response)
+    if ([[response stringResponseMessage] isNotEqualTo:@"ERROR"])
     {
         appdelegate = [AppDelegate getInstance];
         appdelegate.EmpleadoSesionActivo = [response Empleado];
