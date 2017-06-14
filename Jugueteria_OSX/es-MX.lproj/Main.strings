@@ -1,0 +1,675 @@
+
+/* Class = "NSMenuItem"; title = "Eliminar Producto BD"; ObjectID = "01F-Bu-72A"; */
+"01F-Bu-72A.title" = "Eliminar Producto BD";
+
+/* Class = "NSTableColumn"; headerCell.title = "Edad Máx."; ObjectID = "05I-Ur-wR8"; */
+"05I-Ur-wR8.headerCell.title" = "Edad Máx.";
+
+/* Class = "NSTextFieldCell"; title = "Descirpción:"; ObjectID = "1KR-4N-U4T"; */
+"1KR-4N-U4T.title" = "Descirpción:";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1Np-35-nWk"; */
+"1Np-35-nWk.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Personalizar Toolbar…"; ObjectID = "1UK-8n-QPP"; */
+"1UK-8n-QPP.title" = "Personalizar Toolbar…";
+
+/* Class = "NSMenuItem"; title = "iToy System"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "iToy System";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1g7-M7-lJg"; */
+"1g7-M7-lJg.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Lower"; ObjectID = "1tx-W0-xDw"; */
+"1tx-W0-xDw.title" = "Lower";
+
+/* Class = "NSTableColumn"; headerCell.title = "Descripción"; ObjectID = "1uV-TX-qHn"; */
+"1uV-TX-qHn.headerCell.title" = "Descripción";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Obliogatorio"; ObjectID = "1ul-tE-60M"; */
+"1ul-tE-60M.placeholderString" = "Obliogatorio";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Cerrar Panel Administrativo"; ObjectID = "2Bz-Hi-RDU"; */
+"2Bz-Hi-RDU.ibShadowedToolTip" = "Cerrar Panel Administrativo";
+
+/* Class = "NSTextFieldCell"; title = "CopyRight Todos los derechos reservados. iToy's System como proyecto Integrador para el cuarto semestre de ISSC Universidad de la Salle bajío. Carlos Iván Ibarra Pacheco, Mónica Gabriela Gásca Falcon, Christian Ramirez Villapando."; ObjectID = "2a0-MY-F3X"; */
+"2a0-MY-F3X.title" = "CopyRight Todos los derechos reservados. iToy's System como proyecto Integrador para el cuarto semestre de ISSC Universidad de la Salle bajío. Carlos Iván Ibarra Pacheco, Mónica Gabriela Gásca Falcon, Christian Ramirez Villapando.";
+
+/* Class = "NSMenuItem"; title = "Raise"; ObjectID = "2h7-ER-AoG"; */
+"2h7-ER-AoG.title" = "Raise";
+
+/* Class = "NSTextFieldCell"; title = "Cantidad:"; ObjectID = "2p2-dS-Abi"; */
+"2p2-dS-Abi.title" = "Cantidad:";
+
+/* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "3Om-Ey-2VK"; */
+"3Om-Ey-2VK.title" = "Use Default";
+
+/* Class = "NSTextFieldCell"; title = "Cantidad:"; ObjectID = "3dh-Yz-eO9"; */
+"3dh-Yz-eO9.title" = "Cantidad:";
+
+/* Class = "NSMenuItem"; title = "Masculino"; ObjectID = "3w2-tX-6DV"; */
+"3w2-tX-6DV.title" = "Masculino";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "42r-tv-hF0"; */
+"42r-tv-hF0.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Tighten"; ObjectID = "46P-cB-AYj"; */
+"46P-cB-AYj.title" = "Tighten";
+
+/* Class = "NSMenuItem"; title = "Buscar"; ObjectID = "4EN-yA-p0u"; */
+"4EN-yA-p0u.title" = "Buscar";
+
+/* Class = "NSMenuItem"; title = "Entrar Pantalla Completa"; ObjectID = "4J7-dP-txa"; */
+"4J7-dP-txa.title" = "Entrar Pantalla Completa";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "4co-U1-g18"; */
+"4co-U1-g18.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Salir Jugueteria_OSX"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Salir Jugueteria_OSX";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Obligatorio"; ObjectID = "5Nb-DT-2nS"; */
+"5Nb-DT-2nS.placeholderString" = "Obligatorio";
+
+/* Class = "NSMenuItem"; title = "Editar"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Editar";
+
+/* Class = "NSMenuItem"; title = "Copy Style"; ObjectID = "5Vv-lz-BsD"; */
+"5Vv-lz-BsD.title" = "Copy Style";
+
+/* Class = "NSMenuItem"; title = "Acerca de iToy System"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Acerca de iToy System";
+
+/* Class = "NSMenuItem"; title = "Rehacer"; ObjectID = "6dh-zS-Vam"; */
+"6dh-zS-Vam.title" = "Rehacer";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "7BY-NI-5nP"; */
+"7BY-NI-5nP.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Ej. 10"; ObjectID = "7Xx-yA-MHL"; */
+"7Xx-yA-MHL.placeholderString" = "Ej. 10";
+
+/* Class = "NSTableColumn"; headerCell.title = "Empleado"; ObjectID = "7b0-uL-c8D"; */
+"7b0-uL-c8D.headerCell.title" = "Empleado";
+
+/* Class = "NSMenuItem"; title = "Eliminar Producto Carrito"; ObjectID = "7ly-Im-QAp"; */
+"7ly-Im-QAp.title" = "Eliminar Producto Carrito";
+
+/* Class = "NSTextFieldCell"; title = "Cantidad:"; ObjectID = "7p6-fN-RfV"; */
+"7p6-fN-RfV.title" = "Cantidad:";
+
+/* Class = "NSMenuItem"; title = "Vendedor"; ObjectID = "8Ui-xg-HiR"; */
+"8Ui-xg-HiR.title" = "Vendedor";
+
+/* Class = "NSMenu"; title = "Writing Direction"; ObjectID = "8mr-sm-Yjd"; */
+"8mr-sm-Yjd.title" = "Writing Direction";
+
+/* Class = "NSTextFieldCell"; title = "iToy System"; ObjectID = "9cI-Rv-S8w"; */
+"9cI-Rv-S8w.title" = "iToy System";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSTextFieldCell"; title = "Salario:"; ObjectID = "AnW-Rx-j5A"; */
+"AnW-Rx-j5A.title" = "Salario:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Min."; ObjectID = "BD0-7G-tov"; */
+"BD0-7G-tov.placeholderString" = "Min.";
+
+/* Class = "NSMenuItem"; title = "Otro"; ObjectID = "BQ3-1t-4yi"; */
+"BQ3-1t-4yi.title" = "Otro";
+
+/* Class = "NSTableColumn"; headerCell.title = "Cantidad"; ObjectID = "BUI-BJ-Xv8"; */
+"BUI-BJ-Xv8.headerCell.title" = "Cantidad";
+
+/* Class = "NSMenuItem"; title = "\tLeft to Right"; ObjectID = "BgM-ve-c93"; */
+"BgM-ve-c93.title" = "\tLeft to Right";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "BkK-kq-DxC"; */
+"BkK-kq-DxC.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Actualizar Tabla"; ObjectID = "Brw-r0-P7C"; */
+"Brw-r0-P7C.title" = "Actualizar Tabla";
+
+/* Class = "NSViewController"; title = "Panel de Registrar Usuarios"; ObjectID = "C9I-6e-YiY"; */
+"C9I-6e-YiY.title" = "Panel de Registrar Usuarios";
+
+/* Class = "NSTableColumn"; headerCell.title = "Costo"; ObjectID = "Cx0-o9-1e8"; */
+"Cx0-o9-1e8.headerCell.title" = "Costo";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "DLm-fm-ZKo"; */
+"DLm-fm-ZKo.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Cerrar"; ObjectID = "DVo-aG-piG"; */
+"DVo-aG-piG.title" = "Cerrar";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "DeQ-wS-Ma0"; */
+"DeQ-wS-Ma0.title" = "Text Cell";
+
+/* Class = "NSBox"; title = "Añadir Productos"; ObjectID = "EAd-Ya-Ede"; */
+"EAd-Ya-Ede.title" = "Añadir Productos";
+
+/* Class = "NSTextFieldCell"; title = "RFC:"; ObjectID = "EsI-ov-wsm"; */
+"EsI-ov-wsm.title" = "RFC:";
+
+/* Class = "NSMenu"; title = "Ayuda"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Ayuda";
+
+/* Class = "NSTextFieldCell"; title = "Precio:"; ObjectID = "F8Q-98-4FC"; */
+"F8Q-98-4FC.title" = "Precio:";
+
+/* Class = "NSTableColumn"; headerCell.title = "Edad Min."; ObjectID = "FGu-82-QXu"; */
+"FGu-82-QXu.headerCell.title" = "Edad Min.";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Máx."; ObjectID = "FIN-rW-wKX"; */
+"FIN-rW-wKX.placeholderString" = "Máx.";
+
+/* Class = "NSMenuItem"; title = "Jugueteria_OSX Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Jugueteria_OSX Help";
+
+/* Class = "NSMenuItem"; title = "Texto"; ObjectID = "Fal-I4-PZk"; */
+"Fal-I4-PZk.title" = "Texto";
+
+/* Class = "NSTextFieldCell"; title = "Marca:"; ObjectID = "Fzn-Mi-a3J"; */
+"Fzn-Mi-a3J.title" = "Marca:";
+
+/* Class = "NSMenuItem"; title = "Bold"; ObjectID = "GB9-OM-e27"; */
+"GB9-OM-e27.title" = "Bold";
+
+/* Class = "NSMenu"; title = "Formato"; ObjectID = "GEO-Iw-cKr"; */
+"GEO-Iw-cKr.title" = "Formato";
+
+/* Class = "NSTableColumn"; headerCell.title = "Precio"; ObjectID = "GLg-vV-rFH"; */
+"GLg-vV-rFH.headerCell.title" = "Precio";
+
+/* Class = "NSButtonCell"; title = "Añadir"; ObjectID = "GSw-uJ-pEh"; */
+"GSw-uJ-pEh.title" = "Añadir";
+
+/* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "GUa-eO-cwY"; */
+"GUa-eO-cwY.title" = "Use Default";
+
+/* Class = "NSTextFieldCell"; title = "Confirmar Clave:"; ObjectID = "GVd-bv-YrD"; */
+"GVd-bv-YrD.title" = "Confirmar Clave:";
+
+/* Class = "NSMenuItem"; title = "Fuente"; ObjectID = "Gi5-1S-RQB"; */
+"Gi5-1S-RQB.title" = "Fuente";
+
+/* Class = "NSTextFieldCell"; title = "Nombre:"; ObjectID = "GwE-XL-qen"; */
+"GwE-XL-qen.title" = "Nombre:";
+
+/* Class = "NSMenuItem"; title = "Writing Direction"; ObjectID = "H1b-Si-o9J"; */
+"H1b-Si-o9J.title" = "Writing Direction";
+
+/* Class = "NSMenuItem"; title = "Vista"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "Vista";
+
+/* Class = "NSTableColumn"; headerCell.title = "Cant."; ObjectID = "HGD-mm-OM6"; */
+"HGD-mm-OM6.headerCell.title" = "Cant.";
+
+/* Class = "NSTextFieldCell"; title = "Apellido Materno:"; ObjectID = "HRq-xK-2tA"; */
+"HRq-xK-2tA.title" = "Apellido Materno:";
+
+/* Class = "NSMenu"; title = "Vista"; ObjectID = "HyV-fh-RgO"; */
+"HyV-fh-RgO.title" = "Vista";
+
+/* Class = "NSMenuItem"; title = "Subscript"; ObjectID = "I0S-gh-46l"; */
+"I0S-gh-46l.title" = "Subscript";
+
+/* Class = "NSMenuItem"; title = "Abrir…"; ObjectID = "IAo-SY-fd9"; */
+"IAo-SY-fd9.title" = "Abrir…";
+
+/* Class = "NSTabViewController"; title = "iToy System"; ObjectID = "Ibp-TK-YjZ"; */
+"Ibp-TK-YjZ.title" = "iToy System";
+
+/* Class = "NSMenuItem"; title = "Justify"; ObjectID = "J5U-5w-g23"; */
+"J5U-5w-g23.title" = "Justify";
+
+/* Class = "NSMenuItem"; title = "Use None"; ObjectID = "J7y-lM-qPV"; */
+"J7y-lM-qPV.title" = "Use None";
+
+/* Class = "NSTableColumn"; headerCell.title = "Nombre"; ObjectID = "KMp-yO-Yxa"; */
+"KMp-yO-Yxa.headerCell.title" = "Nombre";
+
+/* Class = "NSSegmentedCell"; KSW-3u-4fd.ibShadowedLabels[0] = "Bitacoras"; ObjectID = "KSW-3u-4fd"; */
+"KSW-3u-4fd.ibShadowedLabels[0]" = "Bitacoras";
+
+/* Class = "NSSegmentedCell"; KSW-3u-4fd.ibShadowedLabels[1] = " Ventas "; ObjectID = "KSW-3u-4fd"; */
+"KSW-3u-4fd.ibShadowedLabels[1]" = " Ventas ";
+
+/* Class = "NSButtonCell"; title = "Añadir"; ObjectID = "KaJ-fI-m5d"; */
+"KaJ-fI-m5d.title" = "Añadir";
+
+/* Class = "NSTableColumn"; headerCell.title = "Marca"; ObjectID = "KcU-h3-9cx"; */
+"KcU-h3-9cx.headerCell.title" = "Marca";
+
+/* Class = "NSMenuItem"; title = "Mostrar Todo"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Mostrar Todo";
+
+/* Class = "NSMenuItem"; title = "Trae todo al frente"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Trae todo al frente";
+
+/* Class = "NSMenuItem"; title = "Cerrar Sesión"; ObjectID = "LFK-Jz-kYO"; */
+"LFK-Jz-kYO.title" = "Cerrar Sesión";
+
+/* Class = "NSMenuItem"; title = "Paste Ruler"; ObjectID = "LVM-kO-fVI"; */
+"LVM-kO-fVI.title" = "Paste Ruler";
+
+/* Class = "NSBox"; title = "Datos de Usuario"; ObjectID = "La0-aq-SRm"; */
+"La0-aq-SRm.title" = "Datos de Usuario";
+
+/* Class = "NSMenuItem"; title = "\tLeft to Right"; ObjectID = "Lbh-J2-qVU"; */
+"Lbh-J2-qVU.title" = "\tLeft to Right";
+
+/* Class = "NSMenuItem"; title = "Copy Ruler"; ObjectID = "MkV-Pr-PK5"; */
+"MkV-Pr-PK5.title" = "Copy Ruler";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "N6w-Vr-aLn"; */
+"N6w-Vr-aLn.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "\tDefault"; ObjectID = "Nop-cj-93Q"; */
+"Nop-cj-93Q.title" = "\tDefault";
+
+/* Class = "NSTextFieldCell"; title = "Nombre de Usuario"; ObjectID = "Nxd-X7-Md3"; */
+"Nxd-X7-Md3.title" = "Nombre de Usuario";
+
+/* Class = "NSTextFieldCell"; title = "Edades:"; ObjectID = "O1n-Wk-IbE"; */
+"O1n-Wk-IbE.title" = "Edades:";
+
+/* Class = "NSMenuItem"; title = "Minimizar"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimizar";
+
+/* Class = "NSMenuItem"; title = "Baseline"; ObjectID = "OaQ-X3-Vso"; */
+"OaQ-X3-Vso.title" = "Baseline";
+
+/* Class = "NSMenuItem"; title = "Ocultar Jugueteria_OSX"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Ocultar Jugueteria_OSX";
+
+/* Class = "NSButtonCell"; title = "Añadir"; ObjectID = "PD4-Td-iKW"; */
+"PD4-Td-iKW.title" = "Añadir";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "PMw-XA-xhx"; */
+"PMw-XA-xhx.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Versión 1.0"; ObjectID = "PQY-4F-OOL"; */
+"PQY-4F-OOL.title" = "Versión 1.0";
+
+/* Class = "NSTextFieldCell"; title = "Precio:"; ObjectID = "Phv-KD-5nh"; */
+"Phv-KD-5nh.title" = "Precio:";
+
+/* Class = "NSMenuItem"; title = "Bigger"; ObjectID = "Ptp-SP-VEL"; */
+"Ptp-SP-VEL.title" = "Bigger";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Q2v-si-UL8"; */
+"Q2v-si-UL8.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Show Fonts"; ObjectID = "Q5e-8K-NDq"; */
+"Q5e-8K-NDq.title" = "Show Fonts";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Zoom";
+
+/* Class = "NSTableColumn"; headerCell.title = "Precio Unidad"; ObjectID = "R5b-Ic-Kay"; */
+"R5b-Ic-Kay.headerCell.title" = "Precio Unidad";
+
+/* Class = "NSMenuItem"; title = "\tRight to Left"; ObjectID = "RB4-Sm-HuC"; */
+"RB4-Sm-HuC.title" = "\tRight to Left";
+
+/* Class = "NSMenuItem"; title = "Superscript"; ObjectID = "Rqc-34-cIF"; */
+"Rqc-34-cIF.title" = "Superscript";
+
+/* Class = "NSMenuItem"; title = "Seleccionar todo"; ObjectID = "Ruw-6m-B2m"; */
+"Ruw-6m-B2m.title" = "Seleccionar todo";
+
+/* Class = "NSTextFieldCell"; title = "Este Fomulario sirve exclusivamente para registrar un nuevo empleado."; ObjectID = "SZF-Cs-JZ6"; */
+"SZF-Cs-JZ6.title" = "Este Fomulario sirve exclusivamente para registrar un nuevo empleado.";
+
+/* Class = "NSTextFieldCell"; title = "Seleccióne de la lista de productos existentes el que deseé agregar:"; ObjectID = "Shh-q7-Zuh"; */
+"Shh-q7-Zuh.title" = "Seleccióne de la lista de productos existentes el que deseé agregar:";
+
+/* Class = "NSTableColumn"; headerCell.title = "Marca"; ObjectID = "TSB-J3-SYt"; */
+"TSB-J3-SYt.headerCell.title" = "Marca";
+
+/* Class = "NSMenu"; title = "Ventana"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Ventana";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Repita su contraseña"; ObjectID = "Tol-wp-QdS"; */
+"Tol-wp-QdS.placeholderString" = "Repita su contraseña";
+
+/* Class = "NSMenuItem"; title = "Center"; ObjectID = "VIY-Ag-zcb"; */
+"VIY-Ag-zcb.title" = "Center";
+
+/* Class = "NSMenuItem"; title = "Ocultar Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Ocultar Others";
+
+/* Class = "NSMenuItem"; title = "Italic"; ObjectID = "Vjx-xi-njq"; */
+"Vjx-xi-njq.title" = "Italic";
+
+/* Class = "NSMenu"; title = "Editar"; ObjectID = "W48-6f-4Dl"; */
+"W48-6f-4Dl.title" = "Editar";
+
+/* Class = "NSMenuItem"; title = "Underline"; ObjectID = "WRG-CD-K1S"; */
+"WRG-CD-K1S.title" = "Underline";
+
+/* Class = "NSMenuItem"; title = "Nuevo"; ObjectID = "Was-JA-tGl"; */
+"Was-JA-tGl.title" = "Nuevo";
+
+/* Class = "NSBox"; title = "Información Personal del Empleado"; ObjectID = "X0c-aq-F0F"; */
+"X0c-aq-F0F.title" = "Información Personal del Empleado";
+
+/* Class = "NSTextFieldCell"; title = "Clave:"; ObjectID = "X8K-dr-OoG"; */
+"X8K-dr-OoG.title" = "Clave:";
+
+/* Class = "NSMenuItem"; title = "\tDefault"; ObjectID = "YGs-j5-SAR"; */
+"YGs-j5-SAR.title" = "\tDefault";
+
+/* Class = "NSMenuItem"; title = "Align Left"; ObjectID = "ZM1-6Q-yy1"; */
+"ZM1-6Q-yy1.title" = "Align Left";
+
+/* Class = "NSMenuItem"; title = "Seleccione un Juguete Existente"; ObjectID = "Zcz-Gu-OGn"; */
+"Zcz-Gu-OGn.title" = "Seleccione un Juguete Existente";
+
+/* Class = "NSMenuItem"; title = "Seleccione un Juguete Existente"; ObjectID = "Zh0-SY-wRY"; */
+"Zh0-SY-wRY.title" = "Seleccione un Juguete Existente";
+
+/* Class = "NSMenuItem"; title = "Paragraph"; ObjectID = "ZvO-Gk-QUH"; */
+"ZvO-Gk-QUH.title" = "Paragraph";
+
+/* Class = "NSTextFieldCell"; title = "Nombres:"; ObjectID = "ZwU-3f-aJ8"; */
+"ZwU-3f-aJ8.title" = "Nombres:";
+
+/* Class = "NSTextFieldCell"; title = "Marca:"; ObjectID = "aAX-Bf-FjJ"; */
+"aAX-Bf-FjJ.title" = "Marca:";
+
+/* Class = "NSMenuItem"; title = "Productos"; ObjectID = "aMf-dc-2lq"; */
+"aMf-dc-2lq.title" = "Productos";
+
+/* Class = "NSMenuItem"; title = "Imprimir…"; ObjectID = "aTl-1u-JFS"; */
+"aTl-1u-JFS.title" = "Imprimir…";
+
+/* Class = "NSMenuItem"; title = "Ventana"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Ventana";
+
+/* Class = "NSViewController"; title = "  Venta    "; ObjectID = "aWI-NE-ZyD"; */
+"aWI-NE-ZyD.title" = "  Venta    ";
+
+/* Class = "NSMenu"; title = "Fuente"; ObjectID = "aXa-aM-Jaq"; */
+"aXa-aM-Jaq.title" = "Fuente";
+
+/* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "agt-UL-0e3"; */
+"agt-UL-0e3.title" = "Use Default";
+
+/* Class = "NSTextFieldCell"; title = "Apellido Paterno:"; ObjectID = "ayk-rl-goa"; */
+"ayk-rl-goa.title" = "Apellido Paterno:";
+
+/* Class = "NSMenuItem"; title = "Show Colors"; ObjectID = "bgn-CT-cEk"; */
+"bgn-CT-cEk.title" = "Show Colors";
+
+/* Class = "NSMenu"; title = "Archivo"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "Archivo";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "cAu-mA-X7u"; */
+"cAu-mA-X7u.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Use None"; ObjectID = "cDB-IK-hbR"; */
+"cDB-IK-hbR.title" = "Use None";
+
+/* Class = "NSMenuItem"; title = "Selection"; ObjectID = "cqv-fj-IhA"; */
+"cqv-fj-IhA.title" = "Selection";
+
+/* Class = "NSTextFieldCell"; title = "Edades:"; ObjectID = "cw4-vn-zRw"; */
+"cw4-vn-zRw.title" = "Edades:";
+
+/* Class = "NSMenu"; title = "Texto"; ObjectID = "d9c-me-L2H"; */
+"d9c-me-L2H.title" = "Texto";
+
+/* Class = "NSMenuItem"; title = "Archivo"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "Archivo";
+
+/* Class = "NSMenuItem"; title = "Deshacer"; ObjectID = "dRJ-4n-Yzg"; */
+"dRJ-4n-Yzg.title" = "Deshacer";
+
+/* Class = "NSButtonCell"; title = "Entrar"; ObjectID = "dnF-QQ-5AN"; */
+"dnF-QQ-5AN.title" = "Entrar";
+
+/* Class = "NSTextFieldCell"; title = "Total:"; ObjectID = "f8t-PS-hxY"; */
+"f8t-PS-hxY.title" = "Total:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Contraseña unica"; ObjectID = "fLS-wZ-NCy"; */
+"fLS-wZ-NCy.placeholderString" = "Contraseña unica";
+
+/* Class = "NSTextFieldCell"; title = "Inicie Sesión"; ObjectID = "fbp-nG-FeP"; */
+"fbp-nG-FeP.title" = "Inicie Sesión";
+
+/* Class = "NSViewController"; title = "Login"; ObjectID = "gRp-f3-Blc"; */
+"gRp-f3-Blc.title" = "Login";
+
+/* Class = "NSTextFieldCell"; title = "Reportes del Sistema"; ObjectID = "gY0-rP-09u"; */
+"gY0-rP-09u.title" = "Reportes del Sistema";
+
+/* Class = "NSTableColumn"; headerCell.title = "Producto"; ObjectID = "ggN-hy-lMc"; */
+"ggN-hy-lMc.headerCell.title" = "Producto";
+
+/* Class = "NSTableColumn"; headerCell.title = "Cant."; ObjectID = "ghU-E6-unf"; */
+"ghU-E6-unf.headerCell.title" = "Cant.";
+
+/* Class = "NSTextFieldCell"; title = "Rol:"; ObjectID = "hM3-63-5kV"; */
+"hM3-63-5kV.title" = "Rol:";
+
+/* Class = "NSButtonCell"; title = "Crear Nuevo Usuario"; ObjectID = "hVp-OL-5Gv"; */
+"hVp-OL-5Gv.title" = "Crear Nuevo Usuario";
+
+/* Class = "NSMenuItem"; title = "Admin"; ObjectID = "hXG-KS-Jqo"; */
+"hXG-KS-Jqo.title" = "Admin";
+
+/* Class = "NSTextFieldCell"; title = "Total: $0.000"; ObjectID = "hYA-8y-4oY"; */
+"hYA-8y-4oY.title" = "Total: $0.000";
+
+/* Class = "NSMenuItem"; title = "Smaller"; ObjectID = "i1d-Er-qST"; */
+"i1d-Er-qST.title" = "Smaller";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Descripción"; ObjectID = "ib1-fW-J60"; */
+"ib1-fW-J60.placeholderString" = "Descripción";
+
+/* Class = "NSMenuItem"; title = "Femenino"; ObjectID = "igi-IB-7PA"; */
+"igi-IB-7PA.title" = "Femenino";
+
+/* Class = "NSMenu"; title = "Baseline"; ObjectID = "ijk-EB-dga"; */
+"ijk-EB-dga.title" = "Baseline";
+
+/* Class = "NSTableColumn"; headerCell.title = "Id"; ObjectID = "j9A-gQ-JE6"; */
+"j9A-gQ-JE6.headerCell.title" = "Id";
+
+/* Class = "NSMenuItem"; title = "Kern"; ObjectID = "jBQ-r6-VK2"; */
+"jBQ-r6-VK2.title" = "Kern";
+
+/* Class = "NSMenuItem"; title = "\tRight to Left"; ObjectID = "jFq-tB-4Kx"; */
+"jFq-tB-4Kx.title" = "\tRight to Left";
+
+/* Class = "NSTableColumn"; headerCell.title = "Costo "; ObjectID = "jM3-9P-mZm"; */
+"jM3-9P-mZm.headerCell.title" = "Costo ";
+
+/* Class = "NSToolbarItem"; label = "Reportes"; ObjectID = "jhY-tr-Mvc"; */
+"jhY-tr-Mvc.label" = "Reportes";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Reportes"; ObjectID = "jhY-tr-Mvc"; */
+"jhY-tr-Mvc.paletteLabel" = "Reportes";
+
+/* Class = "NSToolbarItem"; toolTip = "Reportes del Sistema"; ObjectID = "jhY-tr-Mvc"; */
+"jhY-tr-Mvc.toolTip" = "Reportes del Sistema";
+
+/* Class = "NSTextFieldCell"; title = "Código:"; ObjectID = "js9-Z2-oGh"; */
+"js9-Z2-oGh.title" = "Código:";
+
+/* Class = "NSMenuItem"; title = "Formato"; ObjectID = "jxT-CU-nIS"; */
+"jxT-CU-nIS.title" = "Formato";
+
+/* Class = "NSTextFieldCell"; title = "Registrar Nuevo Empleado"; ObjectID = "kEk-Eg-QWH"; */
+"kEk-Eg-QWH.title" = "Registrar Nuevo Empleado";
+
+/* Class = "NSMenuItem"; title = "Mostrar Sidebar"; ObjectID = "kIP-vf-haE"; */
+"kIP-vf-haE.title" = "Mostrar Sidebar";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "kYs-hB-OmD"; */
+"kYs-hB-OmD.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Alimentar Inventario"; ObjectID = "lJ6-9n-3La"; */
+"lJ6-9n-3La.title" = "Alimentar Inventario";
+
+/* Class = "NSButtonCell"; title = "Registrar y Generar Bitcora"; ObjectID = "lSb-ll-L0g"; */
+"lSb-ll-L0g.title" = "Registrar y Generar Bitcora";
+
+/* Class = "NSTableColumn"; headerCell.title = "Nombre"; ObjectID = "lsb-Km-Xe6"; */
+"lsb-Km-Xe6.headerCell.title" = "Nombre";
+
+/* Class = "NSButtonCell"; title = "Realizar Compra"; ObjectID = "mBY-nv-wXH"; */
+"mBY-nv-wXH.title" = "Realizar Compra";
+
+/* Class = "NSViewController"; title = "Alimentador de Inventario"; ObjectID = "mOW-h4-6gB"; */
+"mOW-h4-6gB.title" = "Alimentador de Inventario";
+
+/* Class = "NSTabViewItem"; label = "Nuevo"; ObjectID = "mgN-e3-BvE"; */
+"mgN-e3-BvE.label" = "Nuevo";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "mp5-zq-nK0"; */
+"mp5-zq-nK0.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; placeholderString = "$"; ObjectID = "mvl-vi-Zl8"; */
+"mvl-vi-Zl8.placeholderString" = "$";
+
+/* Class = "NSTextFieldCell"; title = "Fecha de Nacimiento:"; ObjectID = "nAf-IW-Jxl"; */
+"nAf-IW-Jxl.title" = "Fecha de Nacimiento:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Obliogatorio"; ObjectID = "nBz-l2-KdT"; */
+"nBz-l2-KdT.placeholderString" = "Obliogatorio";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "nRo-40-3Q0"; */
+"nRo-40-3Q0.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Precio:"; ObjectID = "naN-Yn-hfu"; */
+"naN-Yn-hfu.title" = "Precio:";
+
+/* Class = "NSMenuItem"; title = "Ligatures"; ObjectID = "o6e-r0-MWq"; */
+"o6e-r0-MWq.title" = "Ligatures";
+
+/* Class = "NSTextFieldCell"; title = "Marca:"; ObjectID = "oQo-rg-HFj"; */
+"oQo-rg-HFj.title" = "Marca:";
+
+/* Class = "NSMenuItem"; title = "Loosen"; ObjectID = "ogc-rX-tC1"; */
+"ogc-rX-tC1.title" = "Loosen";
+
+/* Class = "NSTabViewItem"; label = "Existente"; ObjectID = "pT4-rf-ZtS"; */
+"pT4-rf-ZtS.label" = "Existente";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Bruto y Quincenal"; ObjectID = "pxr-kw-3YO"; */
+"pxr-kw-3YO.placeholderString" = "Bruto y Quincenal";
+
+/* Class = "NSMenuItem"; title = "Almacen"; ObjectID = "r1E-KS-E7E"; */
+"r1E-KS-E7E.title" = "Almacen";
+
+/* Class = "NSTextFieldCell"; title = "Seleccion de Productos"; ObjectID = "rWz-Wh-mwU"; */
+"rWz-Wh-mwU.title" = "Seleccion de Productos";
+
+/* Class = "NSTextFieldCell"; title = "Inventario de Juguetes"; ObjectID = "reM-Om-pqv"; */
+"reM-Om-pqv.title" = "Inventario de Juguetes";
+
+/* Class = "NSToolbarItem"; label = "Cerrar Sesión"; ObjectID = "rfa-T5-suc"; */
+"rfa-T5-suc.label" = "Cerrar Sesión";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Cerrar Sesión"; ObjectID = "rfa-T5-suc"; */
+"rfa-T5-suc.paletteLabel" = "Cerrar Sesión";
+
+/* Class = "NSToolbarItem"; toolTip = "Cerrar Sesión"; ObjectID = "rfa-T5-suc"; */
+"rfa-T5-suc.toolTip" = "Cerrar Sesión";
+
+/* Class = "NSTableColumn"; headerCell.title = "Fecha"; ObjectID = "ruC-yk-JfN"; */
+"ruC-yk-JfN.headerCell.title" = "Fecha";
+
+/* Class = "NSViewController"; title = "Inventario"; ObjectID = "sVL-Gd-b2F"; */
+"sVL-Gd-b2F.title" = "Inventario";
+
+/* Class = "NSMenuItem"; title = "Mostrar Toolbar"; ObjectID = "snW-S8-Cw5"; */
+"snW-S8-Cw5.title" = "Mostrar Toolbar";
+
+/* Class = "NSMenu"; title = "Kern"; ObjectID = "tlD-Oa-oAM"; */
+"tlD-Oa-oAM.title" = "Kern";
+
+/* Class = "NSMenu"; title = "iToy System"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "iToy System";
+
+/* Class = "NSTextFieldCell"; title = "Contraseña"; ObjectID = "uhC-I4-Tsx"; */
+"uhC-I4-Tsx.title" = "Contraseña";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "upO-yz-RbO"; */
+"upO-yz-RbO.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "v4T-TP-Cs2"; */
+"v4T-TP-Cs2.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Paste Style"; ObjectID = "vKC-jM-MkH"; */
+"vKC-jM-MkH.title" = "Paste Style";
+
+/* Class = "NSMenuItem"; title = "Show Ruler"; ObjectID = "vLm-3I-IUL"; */
+"vLm-3I-IUL.title" = "Show Ruler";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Obliogatorio"; ObjectID = "vqz-ay-OVP"; */
+"vqz-ay-OVP.placeholderString" = "Obliogatorio";
+
+/* Class = "NSMenu"; title = "Ligatures"; ObjectID = "w0m-vy-SC9"; */
+"w0m-vy-SC9.title" = "Ligatures";
+
+/* Class = "NSTextFieldCell"; title = "Género:"; ObjectID = "w9K-cQ-bJd"; */
+"w9K-cQ-bJd.title" = "Género:";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "wHP-jR-ZJ6"; */
+"wHP-jR-ZJ6.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Align Right"; ObjectID = "wb2-vD-lq4"; */
+"wb2-vD-lq4.title" = "Align Right";
+
+/* Class = "NSViewController"; title = "Reportes"; ObjectID = "wbM-Ko-4dW"; */
+"wbM-Ko-4dW.title" = "Reportes";
+
+/* Class = "NSMenuItem"; title = "Ayuda"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Ayuda";
+
+/* Class = "NSTextFieldCell"; title = "Carrito de Compras"; ObjectID = "wtK-5w-Deo"; */
+"wtK-5w-Deo.title" = "Carrito de Compras";
+
+/* Class = "NSMenuItem"; title = "Use All"; ObjectID = "xQD-1f-W4t"; */
+"xQD-1f-W4t.title" = "Use All";
+
+/* Class = "NSTextFieldCell"; title = "Nombre:"; ObjectID = "xum-m7-TQ7"; */
+"xum-m7-TQ7.title" = "Nombre:";
+
+/* Class = "NSToolbarItem"; label = "itoy logo"; ObjectID = "xzs-Dt-vNP"; */
+"xzs-Dt-vNP.label" = "itoy logo";
+
+/* Class = "NSToolbarItem"; paletteLabel = "itoy logo"; ObjectID = "xzs-Dt-vNP"; */
+"xzs-Dt-vNP.paletteLabel" = "itoy logo";
+
+/* Class = "NSToolbarItem"; toolTip = "iToy's Logo"; ObjectID = "xzs-Dt-vNP"; */
+"xzs-Dt-vNP.toolTip" = "iToy's Logo";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "y79-oc-0LL"; */
+"y79-oc-0LL.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Código"; ObjectID = "yq9-Ar-qIV"; */
+"yq9-Ar-qIV.headerCell.title" = "Código";
+
+/* Class = "NSToolbarItem"; label = "Administrador"; ObjectID = "zCj-d1-QqH"; */
+"zCj-d1-QqH.label" = "Administrador";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Administrador"; ObjectID = "zCj-d1-QqH"; */
+"zCj-d1-QqH.paletteLabel" = "Administrador";
+
+/* Class = "NSToolbarItem"; toolTip = "Panel Administrativo (Registrar Empleados)"; ObjectID = "zCj-d1-QqH"; */
+"zCj-d1-QqH.toolTip" = "Panel Administrativo (Registrar Empleados)";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Obliogatorio"; ObjectID = "zQj-k7-vOU"; */
+"zQj-k7-vOU.placeholderString" = "Obliogatorio";
+
+/* Class = "NSTextFieldCell"; title = "Nombre:"; ObjectID = "za3-5B-UK2"; */
+"za3-5B-UK2.title" = "Nombre:";
+
+/* Class = "NSTextFieldCell"; title = "CURP:"; ObjectID = "zdB-wd-Ycs"; */
+"zdB-wd-Ycs.title" = "CURP:";

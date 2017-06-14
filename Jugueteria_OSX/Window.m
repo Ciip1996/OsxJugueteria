@@ -16,9 +16,10 @@
 
 @implementation Window
 
+
 - (void)windowDidLoad {
     [super windowDidLoad];
-    
+
     self.window.titlebarAppearsTransparent = YES;
     self.window.titleVisibility = NSWindowTitleHidden;
     self.window.opaque = NO;

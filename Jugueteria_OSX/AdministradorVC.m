@@ -15,14 +15,12 @@
 @end
 
 @implementation AdministradorVC
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     msqlite =  [[ManejadorSQLite alloc] init];
     appdelegate = [[AppDelegate alloc]init];
     // Do view setup here.
 }
-
 - (IBAction)OnCrearUsuarioNuevo:(id)sender {
     Persona *p = [[Persona alloc]init];
     [p setNombre:[_txtNombre stringValue]];
