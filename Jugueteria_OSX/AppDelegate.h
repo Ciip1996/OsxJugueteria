@@ -15,6 +15,7 @@
 
 @property(nonatomic,retain)Empleado *EmpleadoSesionActivo;
 +(AppDelegate*)getInstance;
+@property (nonatomic,retain) NSMutableArray *ListaProductos;
 @property (nonatomic,strong) NSString *databasename;
 @property (nonatomic,strong) NSString *databasepath;
 -(void) loadDB;

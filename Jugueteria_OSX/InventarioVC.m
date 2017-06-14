@@ -9,6 +9,7 @@
 #import "InventarioVC.h"
 #import "AlimentadorInventarioVC.h"
 #import "Producto.h"
+#import "AFNetworking.h"
 
 @interface InventarioVC ()
 
@@ -27,9 +28,57 @@
     appdelegate = [[AppDelegate alloc] init];
     //inicializar la NSMutableArray
     _ListaProductos = [[NSMutableArray alloc]init];
-    [self ConsultarDatos];
+    //AppDelegate *myAppDelegate = [[NSApplication sharedApplication] delegate];
+    lstID = [[NSArray alloc] init];
+    [self ConsultarProductos];
+}
+
+-(void)ConsultarProductos {
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+    [manager GET:@"http://192.168.43.194:55929/api/Productos" parameters:nil progress:nil success:^(NSURLSessionTask *task, id objectResponse) {
+        _datosJson = (NSDictionary *) objectResponse;
+        
+        for(NSObject* key in _datosJson) {
+            Producto *p = [[Producto alloc] init];
+            
+            [p setIdProducto:(int)[key valueForKey:@"IdProducto"]];
+            [p setNombre:(NSString *)[key valueForKey:@"Nombre"]];
+            [p setDescripcion:(NSString *)[key valueForKey:@"Descripcion"]];
+            [p setMarca:(NSString *)[key valueForKey:@"Marca"]];
+            [p setEdadMinima:(int)[key valueForKey:@"EdadMinima"]];
+            [p setEdadMaxima:(int)[key valueForKey:@"EdadMaxima"]];
+            [p setCantidad:(int)[key valueForKey:@"Cantidad"]];
+            [p setPrecioVenta:(int)[key valueForKey:@"PrecioVenta"]];
+            
+            [_ListaProductos addObject:p];
+            
+            [_TablaProductos reloadData];
+        }}failure:^(NSURLSessionTask *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+            
+        }];
+}
+
+-(void)ActualizarProductos {
+    /*AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    
+    NSMutableArray *ID = [_ListaProductos objectAtIndex:0];
+    NSLog(@"%@", ID);
+    [manager PUT:@"http://192.168.43.194:55929/api/Productos/" parameters:nil success:^(NSURLSessionTask *task, id objectResponse) {
+     NSLog(@"%@");
+     }failure:^(NSURLSessionTask *operation, NSError *error) {
+     NSLog(@"Error: %@", error);
+     
+     }];*/
     
 }
+
 - (void)ConsultarDatos {
     sqlite3 *database;
     sqlite3_stmt *CompiledStatement;
@@ -99,7 +148,7 @@
 - (IBAction)RefrescarTabla:(id)sender {
     _ListaProductos = [[NSMutableArray alloc]init];
     //refresca la lista de productos de la bd
-    [self ConsultarDatos];
+    [self ConsultarProductos];
     //Recargar o refrescar la tabla
     [_TablaProductos reloadData];
 }

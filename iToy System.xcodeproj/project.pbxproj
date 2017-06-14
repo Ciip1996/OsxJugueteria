@@ -31,6 +31,7 @@
 		18EF9BA01E947521004D66C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EF9B9E1E947521004D66C9 /* Main.storyboard */; };
 		18EF9BAA1E947A84004D66C9 /* Producto.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9BA91E947A84004D66C9 /* Producto.m */; };
 		18EF9BAD1E947D97004D66C9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF9BAC1E947D96004D66C9 /* libsqlite3.tbd */; };
+		D5891399F9A8ACF4B1AF0941 /* libPods-Jugueteria_OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F847D918B269006811BF350D /* libPods-Jugueteria_OSX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,9 @@
 		18EF9BA81E947A84004D66C9 /* Producto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Producto.h; sourceTree = "<group>"; };
 		18EF9BA91E947A84004D66C9 /* Producto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Producto.m; sourceTree = "<group>"; };
 		18EF9BAC1E947D96004D66C9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		292EB0A85CE9ADA0D7C69B34 /* Pods-Jugueteria_OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jugueteria_OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jugueteria_OSX/Pods-Jugueteria_OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		3CAC5B61FBFA90C55B1DFC75 /* Pods-Jugueteria_OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jugueteria_OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jugueteria_OSX/Pods-Jugueteria_OSX.release.xcconfig"; sourceTree = "<group>"; };
+		F847D918B269006811BF350D /* libPods-Jugueteria_OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jugueteria_OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18EF9BAD1E947D97004D66C9 /* libsqlite3.tbd in Frameworks */,
+				D5891399F9A8ACF4B1AF0941 /* libPods-Jugueteria_OSX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +250,7 @@
 				18EF9B921E947521004D66C9 /* iToy System */,
 				18EF9B911E947521004D66C9 /* Products */,
 				18EF9BAB1E947D96004D66C9 /* Frameworks */,
+				BA523311EA69CD3AC1E9FCC0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -301,6 +307,7 @@
 				18E942A41EE9A29300C1A910 /* CoreImage.framework */,
 				18E942A21EE9A08700C1A910 /* AppKit.framework */,
 				18EF9BAC1E947D96004D66C9 /* libsqlite3.tbd */,
+				F847D918B269006811BF350D /* libPods-Jugueteria_OSX.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -316,6 +323,15 @@
 			name = SQLite;
 			sourceTree = "<group>";
 		};
+		BA523311EA69CD3AC1E9FCC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				292EB0A85CE9ADA0D7C69B34 /* Pods-Jugueteria_OSX.debug.xcconfig */,
+				3CAC5B61FBFA90C55B1DFC75 /* Pods-Jugueteria_OSX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -323,9 +339,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18EF9BA41E947521004D66C9 /* Build configuration list for PBXNativeTarget "Jugueteria_OSX" */;
 			buildPhases = (
+				F406D1D33194055595CDBFB1 /* [CP] Check Pods Manifest.lock */,
 				18EF9B8C1E947521004D66C9 /* Sources */,
 				18EF9B8D1E947521004D66C9 /* Frameworks */,
 				18EF9B8E1E947521004D66C9 /* Resources */,
+				C8525DFD11F0F883FD53CB98 /* [CP] Embed Pods Frameworks */,
+				E2E0889D64424D8AAF15F394 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -384,6 +403,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8525DFD11F0F883FD53CB98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jugueteria_OSX/Pods-Jugueteria_OSX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E0889D64424D8AAF15F394 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jugueteria_OSX/Pods-Jugueteria_OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F406D1D33194055595CDBFB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18EF9B8C1E947521004D66C9 /* Sources */ = {
@@ -516,6 +583,7 @@
 		};
 		18EF9BA51E947521004D66C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292EB0A85CE9ADA0D7C69B34 /* Pods-Jugueteria_OSX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -531,6 +599,7 @@
 		};
 		18EF9BA61E947521004D66C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAC5B61FBFA90C55B1DFC75 /* Pods-Jugueteria_OSX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";

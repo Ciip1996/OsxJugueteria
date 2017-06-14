@@ -15,12 +15,12 @@
 @interface InventarioVC : NSViewController<NSTableViewDataSource>
 {
     AppDelegate *appdelegate;
-    
+    NSArray *lstID;
 }
 - (IBAction)Eliminar:(id)sender;
 - (IBAction)dobleClickRenglon:(id)sender;
 -(id)init;
-
+@property NSDictionary *datosJson;
 @property (nonatomic,retain) NSMutableArray *ListaProductos;
 @property (weak) IBOutlet NSTableView *TablaProductos;
 @property (weak) IBOutlet NSButton *btnAlimentarInventario;
@@ -28,6 +28,8 @@
 
 - (IBAction)RefrescarTabla:(id)sender;
 -(void)MessageBox:(NSString *)Message andTitle:(NSString *)titulo;
+-(void)ConsultarProductos;
+-(void)ActualizarProductos;
 -(void)ConsultarDatos;
 -(IBAction)deleteRow:(id)sender;
 
