@@ -9,13 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/file.jpg"/>
+        </Grid.Background>
         <Rectangle Fill="#CC1F699C" HorizontalAlignment="Left" Height="48"  VerticalAlignment="Top" Width="400" Margin="0,8,0,0" />
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="149,12,0,0" TextWrapping="Wrap" Text="Notas" VerticalAlignment="Top" FontSize="36"/>
         <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Margin="63,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="143" PlaceholderText="Titulo"/>
-        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="61,304,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="61,304,0,0" VerticalAlignment="Top" Click="button_Click" Background="#FF101B63"/>
         <TextBox x:Name="txtContenido" HorizontalAlignment="Left" Margin="61,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Height="171" PlaceholderText="Contenido"/>
         <TextBox x:Name="txtLista" HorizontalAlignment="Left" Margin="60,384,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="221" Width="251" IsReadOnly="True"/>
-        <Button x:Name="btnLeer" Content="Leer" HorizontalAlignment="Left" Margin="211,66,0,0" VerticalAlignment="Top" Click="btnLeer_Click"/>
+        <Button x:Name="btnLeer" Content="Leer" HorizontalAlignment="Left" Margin="211,66,0,0" VerticalAlignment="Top" Click="btnLeer_Click" Background="#FF101B63"/>
         <AppBarButton x:Name="btnMenu" HorizontalAlignment="Left" Icon="Home"  Margin="10,2,0,0" VerticalAlignment="Top" Click="btnMenu_Click"/>
     </Grid>
 </Page>
