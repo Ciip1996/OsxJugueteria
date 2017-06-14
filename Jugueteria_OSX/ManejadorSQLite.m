@@ -107,23 +107,22 @@
     //abrimos la base de datos de la ruta indicada en el delegate
     if (sqlite3_open([appdelegate.databasepath UTF8String], &database)==SQLITE_OK)
     {
-        //podriamos seleccionar solo algunos o todos en el orden deseado asi:
-        NSString *sqlStatement  = [NSString stringWithFormat:@"%@", query];
-        //lanzamos la consulta y recorremos los resultados si todo ha salido bien
-        if (sqlite3_prepare_v2(database, [sqlStatement UTF8String], -1, &CompiledStatement, NULL)==SQLITE_OK)
+        if (sqlite3_prepare_v2(database, [query UTF8String], -1, &CompiledStatement, NULL)==SQLITE_OK)
         {
             //recorremos  los resultados. en este caso no habra
-            while (sqlite3_step(CompiledStatement)==SQLITE_ROW)
+            if(sqlite3_step(CompiledStatement)==SQLITE_ROW)
             {
                 //leemos las columnas necesarias.aunque algunos valores son numericos prefiero recuperarlos en string y convertirlos luego porque da menos problemas
                 response = YES;
+            }
+            else {
             }
         }
         else
         {
             //indico si hubo un error
             [appdelegate MessageBox:@"No se ha podido acceder a la base de datos local." andTitle:@"Error SQLite"];
-            response = YES;
+            response = NO;
         }
         //libero la consulta
         sqlite3_finalize(CompiledStatement);

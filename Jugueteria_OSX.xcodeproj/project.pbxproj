@@ -22,6 +22,7 @@
 		18B249BC1EEEC701007EAF5E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249BB1EEEC701007EAF5E /* Response.m */; };
 		18B249BF1EEF0932007EAF5E /* Reporte.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B249BE1EEF0932007EAF5E /* Reporte.m */; };
 		18C8CF4C1EEAF85300A9C1CD /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8CF4B1EEAF85300A9C1CD /* Window.m */; };
+		18C9604C1EF10005008175DF /* AdministradorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C9604B1EF10005008175DF /* AdministradorVC.m */; };
 		18E942AD1EE9BF6F00C1A910 /* InventarioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E942AC1EE9BF6F00C1A910 /* InventarioVC.m */; };
 		18EF9B951E947521004D66C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9B941E947521004D66C9 /* AppDelegate.m */; };
 		18EF9B981E947521004D66C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF9B971E947521004D66C9 /* main.m */; };
@@ -59,6 +60,8 @@
 		18B249BE1EEF0932007EAF5E /* Reporte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reporte.m; sourceTree = "<group>"; };
 		18C8CF4A1EEAF85300A9C1CD /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
 		18C8CF4B1EEAF85300A9C1CD /* Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Window.m; sourceTree = "<group>"; };
+		18C9604A1EF10005008175DF /* AdministradorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdministradorVC.h; sourceTree = "<group>"; };
+		18C9604B1EF10005008175DF /* AdministradorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdministradorVC.m; sourceTree = "<group>"; };
 		18E942A21EE9A08700C1A910 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		18E942A41EE9A29300C1A910 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		18E942A61EE9A51C00C1A910 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -109,6 +112,7 @@
 		189E96251EE780D8003E85C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				18C9604D1EF11220008175DF /* Administrador */,
 				189E96261EE780E3003E85C0 /* Login */,
 				189E962B1EE785AE003E85C0 /* TabView */,
 				18607CE51EE9FFB50039C1A6 /* Reportes */,
@@ -211,6 +215,15 @@
 				18C8CF4B1EEAF85300A9C1CD /* Window.m */,
 			);
 			name = Window;
+			sourceTree = "<group>";
+		};
+		18C9604D1EF11220008175DF /* Administrador */ = {
+			isa = PBXGroup;
+			children = (
+				18C9604A1EF10005008175DF /* AdministradorVC.h */,
+				18C9604B1EF10005008175DF /* AdministradorVC.m */,
+			);
+			name = Administrador;
 			sourceTree = "<group>";
 		};
 		18E942AE1EE9BF7400C1A910 /* Inventario */ = {
@@ -384,6 +397,7 @@
 				18B249B41EEEBE0B007EAF5E /* Venta.m in Sources */,
 				189E962E1EE785EA003E85C0 /* TabViewController.m in Sources */,
 				18B249BC1EEEC701007EAF5E /* Response.m in Sources */,
+				18C9604C1EF10005008175DF /* AdministradorVC.m in Sources */,
 				185DB1A21EEDD055004A575C /* VentaVC.m in Sources */,
 				18EF9B951E947521004D66C9 /* AppDelegate.m in Sources */,
 			);

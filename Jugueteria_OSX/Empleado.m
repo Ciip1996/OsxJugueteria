@@ -12,6 +12,7 @@
 
 @synthesize IdEmpleado = IdEmpleado;
 @synthesize IdPersona = IdPersona;
+@synthesize persona = persona;
 @synthesize Rol = Rol;
 @synthesize Usuario = Usuario;
 @synthesize Contrasenia = Contrasenia;

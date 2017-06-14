@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Persona.h"
 
 @interface Empleado : NSObject
 
@@ -14,6 +15,7 @@
 //propiedades de tabla Empleado:
 @property int IdEmpleado;
 @property int IdPersona;
+@property Persona* persona;
 @property double Salario;
 @property NSString *Codigo;
 @property NSString *FechaIngreso;
