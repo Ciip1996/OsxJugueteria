@@ -16,6 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     msqlite = [[ManejadorSQLite alloc]init];
+    listaTabla = [[NSMutableArray alloc]init];
     [self CargarReporte];
 }
 -(void)CargarReporte{
@@ -26,10 +27,9 @@
     }
     else
     {//Entradas de Almacen
-        NSString *query = [NSString stringWithFormat:@"SELECT B.IdBitacora, B.FechaAbastecimiento,  Per.Nombre FROM  Bitacora AS B INNER JOIN Empleado AS E ON E.IdEmpleado = B.IdEmpleado INNER JOIN Persona AS Per ON Per.IdPersona = E.IdPersona"];
-        listaTabla = [msqlite SelectSomething:query];
+        NSString *query = [NSString stringWithFormat:@"SELECT * FROM  Bitacora AS B"];
+        listaTabla = [[NSMutableArray alloc] initWithArray:[msqlite SelectSomething:query]];
         [_tablaReporte reloadData];
-    
     }
 }
 -(IBAction)CargarViewControllerAsPopup:(id)sender{

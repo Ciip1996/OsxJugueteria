@@ -13,6 +13,7 @@
 
 @synthesize IdBitacora = IdBitacora;
 @synthesize FechaAbastecimiento = FechaAbastecimiento;
-@synthesize NombrePersona = NombrePersona;
+@synthesize Empleado = Empleado;
+@synthesize Total = Total;
 
 @end

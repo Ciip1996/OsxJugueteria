@@ -13,6 +13,7 @@
 
 @property NSString *IdBitacora;
 @property NSString *FechaAbastecimiento;
-@property NSString *NombrePersona;
+@property NSString *Empleado;
+@property NSString *Total;
 
 @end

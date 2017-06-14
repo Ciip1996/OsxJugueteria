@@ -201,7 +201,8 @@
                 Reporte *reporte = [[Reporte alloc]init];
                 [reporte setIdBitacora:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 0)]];
                 [reporte setFechaAbastecimiento:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 1)]];
-                [reporte setNombrePersona:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 2)]];
+                [reporte setEmpleado:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 2)]];
+                [reporte setTotal:[NSString stringWithUTF8String:(char *)sqlite3_column_text(CompiledStatement, 3)]];
                 [listaObjetos addObject:reporte];
             }
         }else
@@ -214,7 +215,7 @@
     }
     //cierro la base de datos
     sqlite3_close(database);
-    return listaElementos;
+    return listaObjetos;
 }
 
 @end

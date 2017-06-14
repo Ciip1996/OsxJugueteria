@@ -22,6 +22,7 @@
     NSMutableArray *listaProductosExistentes;
     NSMutableArray *listaComboBox,*listaTabla;
     NSMutableArray *cantidadesViejas;
+    double total;
 
 }
 //Controles de la seccón añadir nuevo producto

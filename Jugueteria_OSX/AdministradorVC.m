@@ -70,7 +70,7 @@
     [NSString stringWithFormat:
      @"INSERT INTO Usuario(Usuario,Contrasenia, IdEmpleado) VALUES('%@','%@',(SELECT IdEmpleado FROM Empleado ORDER BY IdEmpleado DESC limit 1));",[em Usuario], [em Contrasenia]];
     [msqlite ExecuteSqlQuery:queryUsuario];
-
+    [appdelegate MessageBox:[NSString stringWithFormat:@"Se registro al nuevo integrante de itoys correctamente. Ahora puede iniciar sesión con el usuario '%@'.",user] andTitle:@"¡Registro Exitoso!"];
 }
 
 - (IBAction)CerrarVC:(id)sender {

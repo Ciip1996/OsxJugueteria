@@ -103,32 +103,6 @@
     [self agregarProductoBitacora:prod y:cantidadAnterior];
 }
 
-/*
-    el siguiente evento se activa cuando se oprime el boton quitar producto 
-    quita de la tabla visual el elemento seleccionado, si no hay nada seleccionado manda llamar un alert avisando esto.
-    tambien elimina de el NSMutableArray el objeto que se elimino graficamente.
- 
-- (IBAction)QuitarProductoSeleccionado:(id)sender {
-    NSInteger selectedRow = [_tablaResumen selectedRow];
-
-    
-    if (selectedRow != -1) {//valida que haya algo seleccionado.
-        [self Eliminar:NULL];//manda llamar el metodo de esta clase llamado eliminar.
-        [_btnQuitarProductoSeleccionado setEnabled:YES];
-        [_btnRegistrarBitacora setEnabled:YES];
-    }
-    else {//avisa que no hay nada seleccionado.
-        [appdelegate MessageBox:@"Debe seleccionar un registro de la tabla para poder borrarlo." andTitle:@"Seleccione un Renglon."];
-    }
-    //el siguiente codigo activa o desactiva el boton de registrar y generar bitacora si no hay elementos para registrar.
-    int cant = (int)listaTabla.count;
-    if (cant > 1)
-        [_btnRegistrarBitacora setEnabled:YES];
-    else
-        [_btnRegistrarBitacora setEnabled:NO];
-    
-}
-*/
 - (void)agregarProductoBitacora:(Producto*)producto y:(int)cantidadAnterior
 {
     if (cantidadAnterior != 0)
@@ -139,7 +113,7 @@
     }
     [listaTabla addObject:producto];
     [_tablaResumen reloadData];
-    double total = 0.0;
+    total = 0.0;
     for (id item in listaTabla)
         total = total + ([item getPrecioVenta] * [item getCantidad]);
     [_lblTotal setStringValue: [NSString stringWithFormat:@"Total: $%.2f",total]];
@@ -149,8 +123,26 @@
  checa cada objeto de la listaTabla si es nuevo hace insert si es viejo solo hace update a los datos.
  */
 - (IBAction)RegistrarBitacora:(id)sender{
+    //primero registramos nuestra bitacora:
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *fechaHoy = [dateFormatter stringFromDate:[NSDate date]];
+    
+    appdelegate = [AppDelegate getInstance];
+    int idempleado = [[appdelegate EmpleadoSesionActivo] IdEmpleado];
+    NSString *queryBitacora = [NSString stringWithFormat:
+                               @"INSERT INTO Bitacora (FechaAbastecimiento, IdEmpleado, Total) VALUES ('%@',%d, %.2f)",fechaHoy, idempleado, total];
+    msqlite = [[ManejadorSQLite alloc]init];
+    [msqlite ExecuteSqlQuery:queryBitacora];
+
+    //actualizamos el inventario
     for(id producto in listaTabla)
     {
+        NSString *queryDetalleBitacora = [NSString stringWithFormat:
+                           @"INSERT INTO DetalleBitacora (IdBitacora,IdProducto,Cantidad) VALUES ((SELECT IdBitacora FROM Bitacora ORDER BY IdBitacora DESC limit 1),%d,%d);",[producto IdProducto],[producto Cantidad]];
+        msqlite = [[ManejadorSQLite alloc]init];
+        [msqlite ExecuteSqlQuery:queryDetalleBitacora];
+
         if ([producto esNuevo])
         {
             NSString *query = [NSString stringWithFormat:
@@ -181,6 +173,13 @@
             [msqlite ExecuteSqlQuery:query];
         }
     }
+    
+    
+    
+    
+    
+    
+    
     [Principal RefrescarTabla:nil];
     [Ventana dismissViewController:self];//Cierra/libera el control
 }

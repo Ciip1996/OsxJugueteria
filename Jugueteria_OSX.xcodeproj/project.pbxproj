@@ -62,6 +62,7 @@
 		18C8CF4B1EEAF85300A9C1CD /* Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Window.m; sourceTree = "<group>"; };
 		18C9604A1EF10005008175DF /* AdministradorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdministradorVC.h; sourceTree = "<group>"; };
 		18C9604B1EF10005008175DF /* AdministradorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdministradorVC.m; sourceTree = "<group>"; };
+		18C960501EF18E16008175DF /* ITOY-SISTEM-LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ITOY-SISTEM-LOGO.png"; sourceTree = "<group>"; };
 		18E942A21EE9A08700C1A910 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		18E942A41EE9A29300C1A910 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		18E942A61EE9A51C00C1A910 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -302,6 +303,7 @@
 		18EF9BAE1E947DE5004D66C9 /* SQLite */ = {
 			isa = PBXGroup;
 			children = (
+				18C960501EF18E16008175DF /* ITOY-SISTEM-LOGO.png */,
 				09FCA8E01E971F1D000D48F2 /* JugueteriaBD.db */,
 				188901221EEBCE9100D194E5 /* ManejadorSQLite.h */,
 				188901231EEBCE9100D194E5 /* ManejadorSQLite.m */,
@@ -507,26 +509,28 @@
 		18EF9BA51E947521004D66C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = ACJ44FJ4J7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Jugueteria_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ivanpacheco.a.test.Jugueteria-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		18EF9BA61E947521004D66C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = ACJ44FJ4J7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Jugueteria_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ivanpacheco.a.test.Jugueteria-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
