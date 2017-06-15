@@ -366,6 +366,7 @@
 				TargetAttributes = {
 					18EF9B8F1E947521004D66C9 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ACJ44FJ4J7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -586,9 +587,9 @@
 			baseConfigurationReference = 292EB0A85CE9ADA0D7C69B34 /* Pods-Jugueteria_OSX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ACJ44FJ4J7;
 				INFOPLIST_FILE = Jugueteria_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ivanpacheco.a.test.Jugueteria-OSX";
@@ -602,9 +603,9 @@
 			baseConfigurationReference = 3CAC5B61FBFA90C55B1DFC75 /* Pods-Jugueteria_OSX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ACJ44FJ4J7;
 				INFOPLIST_FILE = Jugueteria_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ivanpacheco.a.test.Jugueteria-OSX";
