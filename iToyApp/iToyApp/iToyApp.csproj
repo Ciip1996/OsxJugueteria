@@ -117,7 +117,6 @@
   <ItemGroup>
     <Content Include="Assets\come.jpg" />
     <Content Include="Assets\face.png" />
-    <Content Include="Assets\file.jpg" />
     <Content Include="Assets\galle.jpg" />
     <Content Include="Assets\Logo.scale-240.png" />
     <Content Include="Assets\nubes.jpg" />
